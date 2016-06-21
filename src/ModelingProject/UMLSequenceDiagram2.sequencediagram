@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="a597d6d2-0373-47cf-bf1b-963b86e24c0d" name="就诊过程" linkedPackageId="4a49d483-7c2d-42fe-a140-21951f56b68d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="63cf3549-0c7d-4fe2-9f36-f081df2ee79c" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="972bc036-332d-461d-a0b8-f370747909df" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="82e6c247-10c0-48bd-8ed5-707c7f7b29ca">
+          <propertyInstance Id="7ca1e948-31ca-434b-a01e-92c6abee6f69" name="BaseName">
+            <elementDefinition Id="c51802c8-5965-4a83-93f9-1d2842fca334" />
+          </propertyInstance>
+          <elementDefinition Id="634c93cb-75e2-415e-b302-9845fc7f7987" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d1fad1c3-a797-4f00-8d7c-e5ce4406f318">
+          <propertyInstance Id="0b7aa0a6-d93c-4339-b842-95852982a04c" name="ClrAttributes">
+            <elementDefinition Id="6e657611-a91e-47ef-a938-1e1f299f1adb" />
+          </propertyInstance>
+          <elementDefinition Id="68c7a2b2-f0c4-4e27-a85e-09d6f04e1db0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="35bd912c-8296-43ae-89c2-01c437adbeff">
+          <propertyInstance Id="0b51f509-f661-4d5a-b7e7-247049f91e18" name="Usings">
+            <elementDefinition Id="e9141504-7a1d-42e9-a7c7-980e8068c80e" />
+          </propertyInstance>
+          <elementDefinition Id="4c2b0320-a57c-41e2-896a-b305be6fff70" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="16ed0b6b-488e-4e2e-8610-2fcbd0f06442" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="b1a6a488-d5fd-46fe-8d4b-77569e27f1fb" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="2d1d53ff-84db-4247-bbf0-24fa85425876">
+          <propertyInstance Id="20b331f8-51f8-489b-b569-45449e600a34" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="721ec807-2bdc-43bc-8d2e-cf5a582b21ed" />
+          </propertyInstance>
+          <elementDefinition Id="adae40fb-e1dd-4e8a-b31c-92ad5c3db58e" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f031e49b-ec54-4dd0-9455-f7c69a13a6f6">
+          <propertyInstance Id="c7abece7-4031-4d0d-901b-1015d5e31f67" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="e2c1da1a-0f40-4e7e-a8e6-2d8d7815820a" />
+          </propertyInstance>
+          <elementDefinition Id="ff313e52-5e47-4e7e-8d31-d3bdf4b79dd8" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6d31c4b8-0e16-411a-9c69-eb1cc0c88f95">
+          <propertyInstance Id="2eb5a47b-6916-43e8-84e6-0779f3c9ef53" name="ProjectPath" value="ClassTemplate=..\Sagua.Yake.DBModels\Sagua.Yake.DBModels.csproj|EnumTemplate=..\Sagua.Yake.Domain\Sagua.Yake.Domain.csproj|InterfaceTemplate=..\ModelingProjectLib\ModelingProjectLib.csproj|StructTemplate=..\ModelingProjectLib\ModelingProjectLib.csproj">
+            <elementDefinition Id="614240b0-68db-4202-aca3-a7256ac3bbfd" />
+          </propertyInstance>
+          <elementDefinition Id="0b695498-a9be-4362-a12a-2d3304dde88a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3b128513-4d24-46b9-9655-7809306a1a66">
+          <propertyInstance Id="5af72642-d438-4e78-af08-c72dc9c7e858" name="TargetDirectory" value="ClassTemplate=\{PackageStructure}|EnumTemplate={PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="63c58734-e7e6-4b30-8286-21bf71cba991" />
+          </propertyInstance>
+          <elementDefinition Id="23dab540-9580-49de-a2d9-e5a7b3a091c2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="cb737daa-289c-4b9c-8811-681c81fd4611">
+          <propertyInstance Id="5ca30db9-dd11-4a75-9494-15dd36e42ac9" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="c68c4d61-bf3f-45ad-a466-aef246e4caf9" />
+          </propertyInstance>
+          <elementDefinition Id="6c56e7dd-070a-447a-806b-7d5c826c28b3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1f78b564-2349-4ca6-a710-2f06495e480b">
+          <propertyInstance Id="f6eb7872-e5fb-4808-9564-14a5b16ac642" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="929895f0-2631-4589-89f3-5e53e2d09cee" />
+          </propertyInstance>
+          <elementDefinition Id="d5ebbc53-acd6-437f-8380-4608ad06a8e4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1f2f43a4-b841-4aec-84ad-490348f6a261">
+          <propertyInstance Id="0f264893-4e3e-44ff-a28d-167cd9073c01" name="Parameters">
+            <elementDefinition Id="3de012a0-2cd4-4e72-9c29-8ef4806a5091" />
+          </propertyInstance>
+          <elementDefinition Id="ee0a7dd9-a723-4ce4-9e5c-573de567b811" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="d71c6cf5-4f33-4a6b-88f2-e57bbe8279b7" name="就诊过程" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="46765046-c6cf-401b-893d-679db216ee5a" />
+        <fragments>
+          <behaviorExecutionSpecification Id="19469056-ed6f-4b4b-be30-dc7ddb25d374" name="BehaviorExecutionSpecification1">
+            <elementDefinition Id="5bc53bf3-1a27-4247-8c25-d650426fb9f8" />
+            <coveredLifelines>
+              <lifelineMoniker Id="f3c024c9-b7db-4912-ba6b-b25a83fc8c19" LastKnownName="病人管理服务" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="821798cf-b172-45ff-97df-46643ae53ce5" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="151d9232-c8b0-4114-93d3-85368e907204" LastKnownName="ExecutionOccurrenceSpecification1" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="f0889df5-99da-4bd6-8f56-d8d6cbf6c834" LastKnownName="MessageOccurrenceSpecification2" />
+              <messageOccurrenceSpecificationMoniker Id="30574c70-9b13-475d-b80b-64dd63d96142" LastKnownName="MessageOccurrenceSpecification3" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="151d9232-c8b0-4114-93d3-85368e907204" name="ExecutionOccurrenceSpecification1">
+            <elementDefinition Id="9ef6f42d-018a-4185-9bfc-9f813aec5795" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="f3d4c567-2cf5-4678-84e9-0763c46dfb02" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="f3c024c9-b7db-4912-ba6b-b25a83fc8c19" LastKnownName="病人管理服务" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="66429e98-37ac-4f4a-ab8a-01461454c4e8" name="MessageOccurrenceSpecification1">
+            <elementDefinition Id="674a0b4b-67f4-460d-90d1-2d6f7e992fdf" />
+            <covered>
+              <lifelineMoniker Id="759a752e-ba75-4570-90ab-852643b51a0d" LastKnownName="医生" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="f0889df5-99da-4bd6-8f56-d8d6cbf6c834" name="MessageOccurrenceSpecification2">
+            <elementDefinition Id="62939d50-b9b3-4bb1-9d02-9f4f3beb7e92" />
+            <covered>
+              <lifelineMoniker Id="f3c024c9-b7db-4912-ba6b-b25a83fc8c19" LastKnownName="病人管理服务" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="30574c70-9b13-475d-b80b-64dd63d96142" name="MessageOccurrenceSpecification3">
+            <elementDefinition Id="9562241b-d8b3-4f29-81df-6f83332c7426" />
+            <covered>
+              <lifelineMoniker Id="f3c024c9-b7db-4912-ba6b-b25a83fc8c19" LastKnownName="病人管理服务" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="aadc25cd-4cb2-4ea3-a342-b42baf8cb221" name="MessageOccurrenceSpecification4">
+            <elementDefinition Id="1e5ce1cb-b6a8-4cc8-8b8e-a9b158115bf7" />
+            <covered>
+              <lifelineMoniker Id="759a752e-ba75-4570-90ab-852643b51a0d" LastKnownName="医生" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="821798cf-b172-45ff-97df-46643ae53ce5" name="ExecutionOccurrenceSpecification2">
+            <elementDefinition Id="738917ad-c966-40ff-a4d4-c9f058106b50" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="390c74d7-9f07-479e-94d4-2e40465a76fe" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="f3c024c9-b7db-4912-ba6b-b25a83fc8c19" LastKnownName="病人管理服务" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="5a12ffcb-0204-4762-87c0-46d18f1e48e1" name="BehaviorExecutionSpecification2">
+            <elementDefinition Id="18ad1ffd-6e0d-4068-9828-77711f68983b" />
+            <coveredLifelines>
+              <lifelineMoniker Id="7a0ab966-de1d-4658-9ea5-36a8a50f377c" LastKnownName="就诊系统" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="7978284a-2b91-4d63-a6c0-0edd562ccc41" LastKnownName="ExecutionOccurrenceSpecification4" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="8f9d678e-819b-488b-b6b1-1d09a802f6d8" LastKnownName="ExecutionOccurrenceSpecification3" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="1797b3d2-3786-45c2-9ffc-b6d63f3ebb54" LastKnownName="MessageOccurrenceSpecification6" />
+              <messageOccurrenceSpecificationMoniker Id="08fb750c-7be6-4fc1-9e07-b6ddf9f3b953" LastKnownName="MessageOccurrenceSpecification9" />
+              <messageOccurrenceSpecificationMoniker Id="6030ef6f-864d-482c-b82c-b5440810e93d" LastKnownName="MessageOccurrenceSpecification7" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="8f9d678e-819b-488b-b6b1-1d09a802f6d8" name="ExecutionOccurrenceSpecification3">
+            <elementDefinition Id="39245082-5a97-4bcf-894a-a0c78ee39c01" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="301e2403-16c5-47ae-9309-e879555074a8" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="7a0ab966-de1d-4658-9ea5-36a8a50f377c" LastKnownName="就诊系统" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="1797b3d2-3786-45c2-9ffc-b6d63f3ebb54" name="MessageOccurrenceSpecification6">
+            <elementDefinition Id="149f37ed-1d6f-412d-84cb-2760c0755560" />
+            <covered>
+              <lifelineMoniker Id="7a0ab966-de1d-4658-9ea5-36a8a50f377c" LastKnownName="就诊系统" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="ca7ba2be-fe2e-4233-9597-e4bf7e30e443" name="MessageOccurrenceSpecification5">
+            <elementDefinition Id="9ab93662-3246-4e95-ab75-bab40aa477e8" />
+            <covered>
+              <lifelineMoniker Id="759a752e-ba75-4570-90ab-852643b51a0d" LastKnownName="医生" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="41b8377a-c00c-4617-ae7f-534db3da784d" name="BehaviorExecutionSpecification3">
+            <elementDefinition Id="a1baf4b3-ceb8-4544-9ac9-24e83ea89c71" />
+            <coveredLifelines>
+              <lifelineMoniker Id="83e97c0b-d036-487a-a73e-e1d88f48a0bf" LastKnownName="诊所业务调试系统" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="e31d63a9-cc18-44b8-8749-375162d65d87" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="c2dbe814-f30d-411e-8d28-9841e12b318a" LastKnownName="ExecutionOccurrenceSpecification5" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="34fb4eeb-5cea-4925-8d06-7fd1fd7d72d0" LastKnownName="MessageOccurrenceSpecification10" />
+              <messageOccurrenceSpecificationMoniker Id="099d5327-d958-4dc2-be4a-ef8504f9c87a" LastKnownName="MessageOccurrenceSpecification11" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="c2dbe814-f30d-411e-8d28-9841e12b318a" name="ExecutionOccurrenceSpecification5">
+            <elementDefinition Id="761e323f-7b33-4a9c-b372-1aa338aab0de" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="359b71b4-6950-4d58-bdf1-08f32c4c5268" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="83e97c0b-d036-487a-a73e-e1d88f48a0bf" LastKnownName="诊所业务调试系统" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="08fb750c-7be6-4fc1-9e07-b6ddf9f3b953" name="MessageOccurrenceSpecification9">
+            <elementDefinition Id="52b16d3c-5e28-4992-a7fd-b29bb363c700" />
+            <covered>
+              <lifelineMoniker Id="7a0ab966-de1d-4658-9ea5-36a8a50f377c" LastKnownName="就诊系统" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="34fb4eeb-5cea-4925-8d06-7fd1fd7d72d0" name="MessageOccurrenceSpecification10">
+            <elementDefinition Id="0674cbc7-0096-4085-814d-465deaaf65c1" />
+            <covered>
+              <lifelineMoniker Id="83e97c0b-d036-487a-a73e-e1d88f48a0bf" LastKnownName="诊所业务调试系统" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6030ef6f-864d-482c-b82c-b5440810e93d" name="MessageOccurrenceSpecification7">
+            <elementDefinition Id="5f8fddae-4090-4359-950a-89d7f47ad3d7" />
+            <covered>
+              <lifelineMoniker Id="7a0ab966-de1d-4658-9ea5-36a8a50f377c" LastKnownName="就诊系统" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2de91b38-ce9c-48c5-ab6f-e17a2f907b4b" name="MessageOccurrenceSpecification8">
+            <elementDefinition Id="d6dd6561-b68c-46be-9eb6-dfd16e1e8cca" />
+            <covered>
+              <lifelineMoniker Id="759a752e-ba75-4570-90ab-852643b51a0d" LastKnownName="医生" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="7978284a-2b91-4d63-a6c0-0edd562ccc41" name="ExecutionOccurrenceSpecification4">
+            <elementDefinition Id="6d69d017-9abc-40e1-b44d-aaf7d63c9c0d" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="e7b82029-e491-428e-974d-4e56a91ca681" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="7a0ab966-de1d-4658-9ea5-36a8a50f377c" LastKnownName="就诊系统" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="714737f9-d7a3-421d-8bad-58151aeecd48" name="BehaviorExecutionSpecification4">
+            <elementDefinition Id="45f748e3-5677-4941-bb5e-87fb31ea5a4a" />
+            <coveredLifelines>
+              <lifelineMoniker Id="808e3eb8-53ae-440b-805d-dcd320ac1ad1" LastKnownName="病人" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="dd6a326b-39b8-4870-b4fb-8aa0d7e2235d" LastKnownName="ExecutionOccurrenceSpecification8" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="c00954ab-8ee1-4def-b308-781b259d034c" LastKnownName="ExecutionOccurrenceSpecification7" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="d47c9967-23c0-4a78-9071-1a06abe11dc0" LastKnownName="MessageOccurrenceSpecification12" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="c00954ab-8ee1-4def-b308-781b259d034c" name="ExecutionOccurrenceSpecification7">
+            <elementDefinition Id="c32989b2-e2fa-42dd-b8b0-a4bb948f93b6" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="1c7c1843-e80e-43f8-a6fc-bdda2f11347d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="808e3eb8-53ae-440b-805d-dcd320ac1ad1" LastKnownName="病人" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="099d5327-d958-4dc2-be4a-ef8504f9c87a" name="MessageOccurrenceSpecification11">
+            <elementDefinition Id="7df023a8-9418-44f2-a911-aa0d4b7b9091" />
+            <covered>
+              <lifelineMoniker Id="83e97c0b-d036-487a-a73e-e1d88f48a0bf" LastKnownName="诊所业务调试系统" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d47c9967-23c0-4a78-9071-1a06abe11dc0" name="MessageOccurrenceSpecification12">
+            <elementDefinition Id="ca90c1b1-2943-40a5-b127-2deca48dde6c" />
+            <covered>
+              <lifelineMoniker Id="808e3eb8-53ae-440b-805d-dcd320ac1ad1" LastKnownName="病人" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="e31d63a9-cc18-44b8-8749-375162d65d87" name="ExecutionOccurrenceSpecification6">
+            <elementDefinition Id="05852d61-3e44-4dd4-bd44-b44a507620f0" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="df19a7d0-8caf-47ab-8956-a9ccac8959fa" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="83e97c0b-d036-487a-a73e-e1d88f48a0bf" LastKnownName="诊所业务调试系统" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="dd6a326b-39b8-4870-b4fb-8aa0d7e2235d" name="ExecutionOccurrenceSpecification8">
+            <elementDefinition Id="385f2716-87b0-440d-a23c-912178169b59" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="da61299c-f130-4032-95e4-176640e49776" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="808e3eb8-53ae-440b-805d-dcd320ac1ad1" LastKnownName="病人" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="808e3eb8-53ae-440b-805d-dcd320ac1ad1" name="病人" isActor="false" lifelineDisplayName="‎病人‎">
+            <elementDefinition Id="0f3718e8-0679-48e9-8897-954ce930dc4f" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="c00954ab-8ee1-4def-b308-781b259d034c" LastKnownName="ExecutionOccurrenceSpecification7" />
+              <executionOccurrenceSpecificationMoniker Id="dd6a326b-39b8-4870-b4fb-8aa0d7e2235d" LastKnownName="ExecutionOccurrenceSpecification8" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="759a752e-ba75-4570-90ab-852643b51a0d" name="医生" isActor="false" lifelineDisplayName="‎医生‎">
+            <elementDefinition Id="64741d72-eea6-41cf-b93b-34480882fd67" />
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="66429e98-37ac-4f4a-ab8a-01461454c4e8" LastKnownName="MessageOccurrenceSpecification1" />
+              <messageOccurrenceSpecificationMoniker Id="aadc25cd-4cb2-4ea3-a342-b42baf8cb221" LastKnownName="MessageOccurrenceSpecification4" />
+              <messageOccurrenceSpecificationMoniker Id="ca7ba2be-fe2e-4233-9597-e4bf7e30e443" LastKnownName="MessageOccurrenceSpecification5" />
+              <messageOccurrenceSpecificationMoniker Id="2de91b38-ce9c-48c5-ab6f-e17a2f907b4b" LastKnownName="MessageOccurrenceSpecification8" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="7a0ab966-de1d-4658-9ea5-36a8a50f377c" name="就诊系统" isActor="false" lifelineDisplayName="‎就诊系统‎">
+            <elementDefinition Id="4c209bf2-0d94-42ad-b0e1-65b2c09358b9" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="8f9d678e-819b-488b-b6b1-1d09a802f6d8" LastKnownName="ExecutionOccurrenceSpecification3" />
+              <executionOccurrenceSpecificationMoniker Id="7978284a-2b91-4d63-a6c0-0edd562ccc41" LastKnownName="ExecutionOccurrenceSpecification4" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="83e97c0b-d036-487a-a73e-e1d88f48a0bf" name="诊所业务调试系统" isActor="false" lifelineDisplayName="‎诊所业务调试系统‎">
+            <elementDefinition Id="478d9b61-3d52-4528-8637-c4ba83a83b98" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="c2dbe814-f30d-411e-8d28-9841e12b318a" LastKnownName="ExecutionOccurrenceSpecification5" />
+              <executionOccurrenceSpecificationMoniker Id="e31d63a9-cc18-44b8-8749-375162d65d87" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="f3c024c9-b7db-4912-ba6b-b25a83fc8c19" name="病人管理服务" isActor="false" lifelineDisplayName="‎病人管理服务‎">
+            <elementDefinition Id="48e980e0-bbed-43fa-b293-48d90f3dfbc2" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="151d9232-c8b0-4114-93d3-85368e907204" LastKnownName="ExecutionOccurrenceSpecification1" />
+              <executionOccurrenceSpecificationMoniker Id="821798cf-b172-45ff-97df-46643ae53ce5" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="41d2bcd3-e83b-4bd1-83a7-dd4b6318c062" name="查询病人" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="887fad73-5350-465a-8ee2-729683d51a84" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="66429e98-37ac-4f4a-ab8a-01461454c4e8" LastKnownName="MessageOccurrenceSpecification1" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="f0889df5-99da-4bd6-8f56-d8d6cbf6c834" LastKnownName="MessageOccurrenceSpecification2" />
+            </receiveEvent>
+          </message>
+          <message Id="f67d01db-cba4-4edf-97ff-04052d67dfb3" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="58474d8b-00f6-498c-876a-07d7ee968265" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="30574c70-9b13-475d-b80b-64dd63d96142" LastKnownName="MessageOccurrenceSpecification3" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="aadc25cd-4cb2-4ea3-a342-b42baf8cb221" LastKnownName="MessageOccurrenceSpecification4" />
+            </receiveEvent>
+          </message>
+          <message Id="f7e1e09f-33b0-4961-a09b-bb4090abecdb" name="填写病人病历" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="cd92b48f-776d-4b32-8e18-8e3ce2e64da5" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="ca7ba2be-fe2e-4233-9597-e4bf7e30e443" LastKnownName="MessageOccurrenceSpecification5" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="1797b3d2-3786-45c2-9ffc-b6d63f3ebb54" LastKnownName="MessageOccurrenceSpecification6" />
+            </receiveEvent>
+          </message>
+          <message Id="6e555dd1-21e3-4c4a-8a58-0fc6078baa12" name="就诊结束" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="e33ed8d0-00b2-4ffc-bd3c-851cc43e4340" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="08fb750c-7be6-4fc1-9e07-b6ddf9f3b953" LastKnownName="MessageOccurrenceSpecification9" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="34fb4eeb-5cea-4925-8d06-7fd1fd7d72d0" LastKnownName="MessageOccurrenceSpecification10" />
+            </receiveEvent>
+          </message>
+          <message Id="dca85cb7-199f-4504-b7e3-ba5f7c7f230c" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="7853a1cd-97c7-498e-852d-39277c16247e" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="6030ef6f-864d-482c-b82c-b5440810e93d" LastKnownName="MessageOccurrenceSpecification7" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="2de91b38-ce9c-48c5-ab6f-e17a2f907b4b" LastKnownName="MessageOccurrenceSpecification8" />
+            </receiveEvent>
+          </message>
+          <message Id="fb2980a8-b26e-43d2-ac4b-b68b72faa99d" name="下发就诊结果信息" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="7b456466-aa33-4d22-82f4-55e89e3bc6b7" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="099d5327-d958-4dc2-be4a-ef8504f9c87a" LastKnownName="MessageOccurrenceSpecification11" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="d47c9967-23c0-4a78-9071-1a06abe11dc0" LastKnownName="MessageOccurrenceSpecification12" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="f3d4c567-2cf5-4678-84e9-0763c46dfb02" name="ExecutionEvent">
+        <elementDefinition Id="d0f723be-3fd0-43c2-8f33-eb4ce31c20d7" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="390c74d7-9f07-479e-94d4-2e40465a76fe" name="ExecutionEvent">
+        <elementDefinition Id="a093db18-13c0-4e61-9d99-0ffc31b99c36" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="301e2403-16c5-47ae-9309-e879555074a8" name="ExecutionEvent">
+        <elementDefinition Id="192c1255-783b-4c0f-b1f4-60454633ba62" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="e7b82029-e491-428e-974d-4e56a91ca681" name="ExecutionEvent">
+        <elementDefinition Id="93d3796b-40a1-4fdf-83bb-c4f57f23a058" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="359b71b4-6950-4d58-bdf1-08f32c4c5268" name="ExecutionEvent">
+        <elementDefinition Id="be3b1900-be72-4798-9c8d-2f1d9d9c4172" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="df19a7d0-8caf-47ab-8956-a9ccac8959fa" name="ExecutionEvent">
+        <elementDefinition Id="d4c7502d-8849-411d-aeb8-2c9601ad73dc" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="1c7c1843-e80e-43f8-a6fc-bdda2f11347d" name="ExecutionEvent">
+        <elementDefinition Id="766a9337-9bc5-4e2d-8302-cc64c194da99" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="da61299c-f130-4032-95e4-176640e49776" name="ExecutionEvent">
+        <elementDefinition Id="a0fb24fc-81f6-469a-bac5-40e9e545c0d7" />
+      </executionEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="4a49d483-7c2d-42fe-a140-21951f56b68d" name="ModelingProject">
+    <elementDefinition Id="5cb65378-23fd-4a1c-9d5a-f6bbd71f3d9d" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9818d89c-5998-429d-933d-ef92552bdad0">
+        <profileInstance Id="170c8942-3b9d-4638-a03b-696461dc73e5" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f9b14c2e-021b-4f25-b3bd-20714b0b0f15">
+        <profileInstance Id="81c3a7ca-95f3-40c2-b6e3-8e2de6208146" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2503ebea-ddf7-41de-8bcd-a6a7ca0a67e9">
+        <profileInstance Id="e083e81d-c352-4f3c-8f64-fc4b657d706d" name="CSharpProfile">
+          <elementDefinition Id="74d7a904-7a7c-4274-b0ac-0144eb3f93c4" />
+        </profileInstance>
+        <elementDefinition Id="dbdc1d6d-e6d4-415d-abe5-93ca028076a0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ffbaa797-ad42-4f0c-8fbe-6382dbb0d429">
+        <profileInstance Id="a1e056f2-b3a8-42b4-8af9-5ab70e4f593b" name="TextTemplateBindings">
+          <elementDefinition Id="a7b8c563-c5cc-47c0-bfdd-5bb4dd95bf9c" />
+        </profileInstance>
+        <elementDefinition Id="71b65627-6b89-4fa8-88f1-fc04e90e44f6" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</SequenceDesignerModel>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sequenceDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLSequenceDiagram2">
+  <SequenceDesignerModelMoniker Id="a597d6d2-0373-47cf-bf1b-963b86e24c0d" />
+  <nestedChildShapes>
+    <lifelineShape Id="336c6e82-0615-4a67-a5ca-708d21c006bf" absoluteBounds="4.1354165077209473, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="808e3eb8-53ae-440b-805d-dcd320ac1ad1" LastKnownName="病人" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="201f0ea6-7d4b-4b47-b222-3844bd5a865b" absoluteBounds="3.7104165077209474, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="808e3eb8-53ae-440b-805d-dcd320ac1ad1" LastKnownName="病人" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="87e93330-05dc-49d7-a13e-eea11a9aa072" absoluteBounds="4.1354165077209473, 1, 0, 7">
+          <lifelineMoniker Id="808e3eb8-53ae-440b-805d-dcd320ac1ad1" LastKnownName="病人" />
+        </lifelineHoverShape>
+        <umlExecutionSpecificationShape Id="675889f3-50be-4e8e-83f3-b1ef36d485e3" absoluteBounds="4.1354165077209473, 3.72291666666667, 0.15, 0.55" customColor="184, 204, 215" visualStyleMode="Modified">
+          <behaviorExecutionSpecificationMoniker Id="714737f9-d7a3-421d-8bad-58151aeecd48" LastKnownName="BehaviorExecutionSpecification4" />
+        </umlExecutionSpecificationShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <lifelineShape Id="ef61e4e2-02e6-413d-ad2d-fc964c94dd95" absoluteBounds="5.4479168256123867, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="759a752e-ba75-4570-90ab-852643b51a0d" LastKnownName="医生" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="7d76fbda-b580-4e35-8ca6-95251c4dd17a" absoluteBounds="5.0229168256123868, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="759a752e-ba75-4570-90ab-852643b51a0d" LastKnownName="医生" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="3bfb6d26-a79d-45c0-b745-1da8976f1c48" absoluteBounds="5.4479168256123867, 1, 0, 7">
+          <lifelineMoniker Id="759a752e-ba75-4570-90ab-852643b51a0d" LastKnownName="医生" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <lifelineShape Id="eb593139-d5a6-46a9-bdd9-b5f9a8707ba7" absoluteBounds="6.8020831743876142, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="7a0ab966-de1d-4658-9ea5-36a8a50f377c" LastKnownName="就诊系统" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="5c9b6bd9-b1c5-48db-a5d2-bcbe2c90a6da" absoluteBounds="6.3770831743876144, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="7a0ab966-de1d-4658-9ea5-36a8a50f377c" LastKnownName="就诊系统" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="f0d24d2c-c7e0-45b4-835d-41915830a9b3" absoluteBounds="6.8020831743876142, 1, 0, 7">
+          <lifelineMoniker Id="7a0ab966-de1d-4658-9ea5-36a8a50f377c" LastKnownName="就诊系统" />
+        </lifelineHoverShape>
+        <umlExecutionSpecificationShape Id="5d08c23e-3e39-4978-8f6c-41718c0f85f0" absoluteBounds="6.8020831743876142, 2.8229166666666665, 0.15, 0.59999999999999964" customColor="184, 204, 215" visualStyleMode="Modified">
+          <behaviorExecutionSpecificationMoniker Id="5a12ffcb-0204-4762-87c0-46d18f1e48e1" LastKnownName="BehaviorExecutionSpecification2" />
+        </umlExecutionSpecificationShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <lifelineShape Id="6a32c156-091a-4a59-a140-6d4d8096bf1d" absoluteBounds="9.531250158945717, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="f3c024c9-b7db-4912-ba6b-b25a83fc8c19" LastKnownName="病人管理服务" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="e841bb0f-1530-47da-b73b-15177432ffc9" absoluteBounds="9.0325001589457177, 0.6, 1.1475, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="f3c024c9-b7db-4912-ba6b-b25a83fc8c19" LastKnownName="病人管理服务" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="53886175-f67f-43ab-9699-a8769db334fb" absoluteBounds="9.531250158945717, 1, 0, 7">
+          <lifelineMoniker Id="f3c024c9-b7db-4912-ba6b-b25a83fc8c19" LastKnownName="病人管理服务" />
+        </lifelineHoverShape>
+        <umlExecutionSpecificationShape Id="16bf7c09-8bbc-4248-9d15-9690d2650a3f" absoluteBounds="9.531250158945717, 1.5833333333333333, 0.15, 0.55" customColor="184, 204, 215" visualStyleMode="Modified">
+          <behaviorExecutionSpecificationMoniker Id="19469056-ed6f-4b4b-be30-dc7ddb25d374" LastKnownName="BehaviorExecutionSpecification1" />
+        </umlExecutionSpecificationShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <syncMessageConnector edgePoints="[(5.52291682561239 : 1.58333333333333); (9.53125015894572 : 1.58333333333333)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
+      <relativeChildShapes />
+      <nodes>
+        <lifelineShapeMoniker Id="ef61e4e2-02e6-413d-ad2d-fc964c94dd95" />
+        <umlExecutionSpecificationShapeMoniker Id="16bf7c09-8bbc-4248-9d15-9690d2650a3f" />
+      </nodes>
+    </syncMessageConnector>
+    <returnMessageConnector edgePoints="[(9.53125015894572 : 2.13333333333333); (5.52291682561239 : 2.13333333333333)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
+      <relativeChildShapes />
+      <nodes>
+        <umlExecutionSpecificationShapeMoniker Id="16bf7c09-8bbc-4248-9d15-9690d2650a3f" />
+        <lifelineShapeMoniker Id="ef61e4e2-02e6-413d-ad2d-fc964c94dd95" />
+      </nodes>
+    </returnMessageConnector>
+    <syncMessageConnector edgePoints="[(5.52291682561239 : 2.82291666666667); (6.80208317438761 : 2.82291666666667)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
+      <relativeChildShapes />
+      <nodes>
+        <lifelineShapeMoniker Id="ef61e4e2-02e6-413d-ad2d-fc964c94dd95" />
+        <umlExecutionSpecificationShapeMoniker Id="5d08c23e-3e39-4978-8f6c-41718c0f85f0" />
+      </nodes>
+    </syncMessageConnector>
+    <returnMessageConnector edgePoints="[(6.80208317438761 : 3.42291666666667); (5.52291682561239 : 3.42291666666667)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
+      <relativeChildShapes />
+      <nodes>
+        <umlExecutionSpecificationShapeMoniker Id="5d08c23e-3e39-4978-8f6c-41718c0f85f0" />
+        <lifelineShapeMoniker Id="ef61e4e2-02e6-413d-ad2d-fc964c94dd95" />
+      </nodes>
+    </returnMessageConnector>
+    <lifelineShape Id="a7995f5a-8404-4f9d-80bb-90539f7bd881" absoluteBounds="8.125, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="83e97c0b-d036-487a-a73e-e1d88f48a0bf" LastKnownName="诊所业务调试系统" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="ef35848f-240a-4d24-bcea-6cd00010664b" absoluteBounds="7.4908333333333337, 0.6, 1.4183333333333332, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="83e97c0b-d036-487a-a73e-e1d88f48a0bf" LastKnownName="诊所业务调试系统" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="b108ef7c-2ca3-43d4-af11-940c07acd0eb" absoluteBounds="8.125, 1, 0, 7">
+          <lifelineMoniker Id="83e97c0b-d036-487a-a73e-e1d88f48a0bf" LastKnownName="诊所业务调试系统" />
+        </lifelineHoverShape>
+        <umlExecutionSpecificationShape Id="3a5ab9eb-0894-4075-aaa5-9a7c8ae017f0" absoluteBounds="8.125, 3.12291666666667, 0.15, 0.89999999999999991" customColor="184, 204, 215" visualStyleMode="Modified">
+          <behaviorExecutionSpecificationMoniker Id="41b8377a-c00c-4617-ae7f-534db3da784d" LastKnownName="BehaviorExecutionSpecification3" />
+        </umlExecutionSpecificationShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <asyncMessageConnector edgePoints="[(6.95208317438761 : 3.12291666666667); (8.125 : 3.12291666666667)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
+      <relativeChildShapes />
+      <nodes>
+        <umlExecutionSpecificationShapeMoniker Id="5d08c23e-3e39-4978-8f6c-41718c0f85f0" />
+        <umlExecutionSpecificationShapeMoniker Id="3a5ab9eb-0894-4075-aaa5-9a7c8ae017f0" />
+      </nodes>
+    </asyncMessageConnector>
+    <asyncMessageConnector edgePoints="[(8.125 : 3.72291666666667); (4.28541650772095 : 3.72291666666667)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
+      <relativeChildShapes />
+      <nodes>
+        <umlExecutionSpecificationShapeMoniker Id="3a5ab9eb-0894-4075-aaa5-9a7c8ae017f0" />
+        <umlExecutionSpecificationShapeMoniker Id="675889f3-50be-4e8e-83f3-b1ef36d485e3" />
+      </nodes>
+    </asyncMessageConnector>
+  </nestedChildShapes>
+</sequenceDesignerDiagram>

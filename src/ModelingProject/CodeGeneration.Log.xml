@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2016-03-24T13:28:03" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2016-03-24T13:28:03" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2016-03-24T13:28:03" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-03-24T13:28:03" Importance="Diagnostic" Text="ProjectPath = ..\Sagua.Yake.DBModels\Sagua.Yake.DBModels.csproj" />
+  <Message Timestamp="2016-03-24T13:28:03" Importance="Diagnostic" Text="TargetDirectory = \{PackageStructure}" />
+  <Message Timestamp="2016-03-24T13:28:03" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-03-24T13:28:03" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-03-24T13:28:03" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-03-24T13:28:03" Importance="Medium" Text="ModelingProject's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'ModelingProject::Clinic Employee Managerment System' -  (Subsystem), 'ModelingProject::关注公众号过程' -  (Activity), 'ModelingProject::病人初诊过程' -  (Interaction), 'ModelingProject::Db.Moduls::OEM' -  (Class), 'ModelingProject::Db.Moduls::Doctor' -  (Class), 'ModelingProject::Db.Moduls::Clinic' -  (Class), 'ModelingProject::Db.Moduls::User' -  (Class), 'ModelingProject::Db.Moduls::Treatment' -  (Class), 'ModelingProject::Db.Moduls::Schedule' -  (Class), 'ModelingProject::Db.Moduls::Patient' -  (Class), 'ModelingProject::Db.Moduls::OEMItem' -  (Class), 'ModelingProject::Db.Moduls::OemFactory' -  (Class), 'ModelingProject::Db.Moduls::Income' -  (Class), 'ModelingProject::Db.Moduls::ClinicUser' -  (Class), 'ModelingProject::Db.Moduls::Bill' -  (Class), 'ModelingProject::Db.Moduls::PhotoGroup' -  (Class), 'ModelingProject::Db.Moduls::Photo' -  (Class) " />
+  <Message Timestamp="2016-03-24T13:28:04" Importance="Diagnostic" Text="'ModelingProject::Clinic Employee Managerment System' -  (Subsystem): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:04" Importance="Diagnostic" Text="'ModelingProject::关注公众号过程' -  (Activity): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:04" Importance="Diagnostic" Text="'ModelingProject::病人初诊过程' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:04" Importance="Medium" Text="'ModelingProject::Db.Moduls::OEM' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\OEM.cs" />
+  <Message Timestamp="2016-03-24T13:28:05" Importance="Medium" Text="'ModelingProject::Db.Moduls::Doctor' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\Doctor.cs" />
+  <Message Timestamp="2016-03-24T13:28:05" Importance="Medium" Text="'ModelingProject::Db.Moduls::Clinic' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\Clinic.cs" />
+  <Message Timestamp="2016-03-24T13:28:05" Importance="Medium" Text="'ModelingProject::Db.Moduls::User' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\User.cs" />
+  <Message Timestamp="2016-03-24T13:28:05" Importance="Medium" Text="'ModelingProject::Db.Moduls::Treatment' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\Treatment.cs" />
+  <Message Timestamp="2016-03-24T13:28:06" Importance="Medium" Text="'ModelingProject::Db.Moduls::Schedule' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\Schedule.cs" />
+  <Message Timestamp="2016-03-24T13:28:06" Importance="Medium" Text="'ModelingProject::Db.Moduls::Patient' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\Patient.cs" />
+  <Message Timestamp="2016-03-24T13:28:06" Importance="Medium" Text="'ModelingProject::Db.Moduls::OEMItem' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\OEMItem.cs" />
+  <Message Timestamp="2016-03-24T13:28:06" Importance="Medium" Text="'ModelingProject::Db.Moduls::OemFactory' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\OemFactory.cs" />
+  <Message Timestamp="2016-03-24T13:28:06" Importance="Medium" Text="'ModelingProject::Db.Moduls::Income' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\Income.cs" />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Medium" Text="'ModelingProject::Db.Moduls::ClinicUser' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\ClinicUser.cs" />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Medium" Text="'ModelingProject::Db.Moduls::Bill' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\Bill.cs" />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Medium" Text="'ModelingProject::Db.Moduls::PhotoGroup' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\PhotoGroup.cs" />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Medium" Text="'ModelingProject::Db.Moduls::Photo' -  (Class) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.DBModels\Db.Moduls\Photo.cs" />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Diagnostic" Text="Name = EnumTemplate" />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Diagnostic" Text="ProjectPath = ..\Sagua.Yake.Domain\Sagua.Yake.Domain.csproj" />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Diagnostic" Text="TargetDirectory = {PackageStructure}" />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Medium" Text="ModelingProject's Text Template Binding: 'EnumTemplate' will apply EnumTemplate.t4 to: 'ModelingProject::Domain::UserType' -  (Enumeration), 'ModelingProject::Domain::OemType' -  (Enumeration), 'ModelingProject::Domain::SexType' -  (Enumeration), 'ModelingProject::Domain::DegreeType' -  (Enumeration) " />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Medium" Text="'ModelingProject::Domain::UserType' -  (Enumeration) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.Domain\Domain\UserType.cs" />
+  <Message Timestamp="2016-03-24T13:28:07" Importance="Medium" Text="'ModelingProject::Domain::OemType' -  (Enumeration) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.Domain\Domain\OemType.cs" />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Medium" Text="'ModelingProject::Domain::SexType' -  (Enumeration) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.Domain\Domain\SexType.cs" />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Medium" Text="'ModelingProject::Domain::DegreeType' -  (Enumeration) : success (file created) - C:\Users\hai\Documents\Visual Studio 2013\Projects\WEYAKE\Sagua.Yake.Domain\Domain\DegreeType.cs" />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProjectLib\ModelingProjectLib.csproj" />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Medium" Text="ModelingProject's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'ModelingProject::Clinic Employee Managerment System' -  (Subsystem), 'ModelingProject::关注公众号过程' -  (Activity), 'ModelingProject::病人初诊过程' -  (Interaction), 'ModelingProject::Db.Moduls::OEM' -  (Class), 'ModelingProject::Db.Moduls::Doctor' -  (Class), 'ModelingProject::Db.Moduls::Clinic' -  (Class), 'ModelingProject::Db.Moduls::User' -  (Class), 'ModelingProject::Db.Moduls::Treatment' -  (Class), 'ModelingProject::Db.Moduls::Schedule' -  (Class), 'ModelingProject::Db.Moduls::Patient' -  (Class), 'ModelingProject::Db.Moduls::OEMItem' -  (Class), 'ModelingProject::Db.Moduls::OemFactory' -  (Class), 'ModelingProject::Db.Moduls::Income' -  (Class), 'ModelingProject::Db.Moduls::ClinicUser' -  (Class), 'ModelingProject::Db.Moduls::Bill' -  (Class), 'ModelingProject::Db.Moduls::PhotoGroup' -  (Class), 'ModelingProject::Db.Moduls::Photo' -  (Class) " />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="'ModelingProject::Clinic Employee Managerment System' -  (Subsystem): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="'ModelingProject::关注公众号过程' -  (Activity): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="'ModelingProject::病人初诊过程' -  (Interaction): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::OEM' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::Doctor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::Clinic' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::User' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::Treatment' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:08" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::Schedule' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:09" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::Patient' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:09" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::OEMItem' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:09" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::OemFactory' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:09" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::Income' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:09" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::ClinicUser' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::Bill' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::PhotoGroup' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls::Photo' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="The selection included 34 elements which were not bound to a template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject' -  (ModelStoreModel): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'5121f238-ff7a-45db-9aa7-00ee9b66f243' -  (Comment): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'2d96e062-07fc-4d26-9d2f-8ba0a87bfaa1' -  (Comment): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::Manager' -  (Actor): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::Master' -  (Actor): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::Doctor' -  (Actor): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::Patient' -  (Actor): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::User Management' -  (UseCase): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::User' -  (Actor): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::Employess View' -  (UseCase): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::Employess Add' -  (UseCase): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::Employess Del' -  (UseCase): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::Employess Edit' -  (UseCase): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::ExecutionEvent' -  (ExecutionEvent): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'DateTime' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::Db.Moduls' -  (Package): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::Domain' -  (Package): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'Integer?' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="Diagnostic" Text="'ModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-03-24T13:28:10" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>

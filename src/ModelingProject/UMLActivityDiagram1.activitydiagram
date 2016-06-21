@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="50150d6c-ed2d-4e25-b553-bd7f3e486b12" name="Activity1" linkedPackageId="465d52c5-0d51-46b4-be5e-21d27d9ef6d9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="95b668cd-1030-43b9-b256-ebda1de67027">
+      <elementDefinition Id="5121f238-ff7a-45db-9aa7-00ee9b66f243" />
+      <body>是否存在OPENID</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="90872407-1e30-485b-92c2-43639a191a04" LastKnownName="Decision1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="6cdc7d35-b751-4597-ba48-313705cf0e47">
+      <elementDefinition Id="2d96e062-07fc-4d26-9d2f-8ba0a87bfaa1" />
+      <body>是否存在没有绑定OPENID的手机号</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="9838b69d-ad6d-4012-b435-58ef6302d650" LastKnownName="Decision2" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="20194c8e-39f7-47c6-b497-991d7f79aae5" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="972bc036-332d-461d-a0b8-f370747909df" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e25c8f35-c7ae-437e-9e2f-c7a2050c393a">
+          <propertyInstance Id="95fc53fb-8808-4622-bbd2-563951983af9" name="BaseName">
+            <elementDefinition Id="c51802c8-5965-4a83-93f9-1d2842fca334" />
+          </propertyInstance>
+          <elementDefinition Id="634c93cb-75e2-415e-b302-9845fc7f7987" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="baa97ac8-3771-4849-a014-baddeaa52a8b">
+          <propertyInstance Id="39c72029-b59e-4bea-bdde-eb24d64b925f" name="ClrAttributes">
+            <elementDefinition Id="6e657611-a91e-47ef-a938-1e1f299f1adb" />
+          </propertyInstance>
+          <elementDefinition Id="68c7a2b2-f0c4-4e27-a85e-09d6f04e1db0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b6f9d014-d8fd-4b15-ba08-6f5380803938">
+          <propertyInstance Id="d96c38b3-4530-4ef7-87b5-4b16a87b9be2" name="Usings" value="Sagua.Yake.DBModels">
+            <elementDefinition Id="e9141504-7a1d-42e9-a7c7-980e8068c80e" />
+          </propertyInstance>
+          <elementDefinition Id="4c2b0320-a57c-41e2-896a-b305be6fff70" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="dd0eb55f-ba78-410c-bf99-d7cc82a1718f" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="b1a6a488-d5fd-46fe-8d4b-77569e27f1fb" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e4dc0875-450a-4eaf-8767-088b6c023ef9">
+          <propertyInstance Id="15a69664-40e1-4cd9-b468-e82b30280d22" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="721ec807-2bdc-43bc-8d2e-cf5a582b21ed" />
+          </propertyInstance>
+          <elementDefinition Id="adae40fb-e1dd-4e8a-b31c-92ad5c3db58e" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d98e6e54-1185-4d24-93ce-d1b22c30ba06">
+          <propertyInstance Id="d0a59e14-be4b-433f-b3ff-d6cebf9895f9" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="e2c1da1a-0f40-4e7e-a8e6-2d8d7815820a" />
+          </propertyInstance>
+          <elementDefinition Id="ff313e52-5e47-4e7e-8d31-d3bdf4b79dd8" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="9a2c82c0-8d54-4413-ab4d-44870f70fa39">
+          <propertyInstance Id="a667107b-57b5-4540-8504-c2861d85cca1" name="ProjectPath" value="ClassTemplate=..\Sagua.Yake.DBModels\Sagua.Yake.DBModels.csproj|EnumTemplate=..\Sagua.Yake.Domain\Sagua.Yake.Domain.csproj|InterfaceTemplate=..\ModelingProjectLib\ModelingProjectLib.csproj|StructTemplate=..\ModelingProjectLib\ModelingProjectLib.csproj">
+            <elementDefinition Id="614240b0-68db-4202-aca3-a7256ac3bbfd" />
+          </propertyInstance>
+          <elementDefinition Id="0b695498-a9be-4362-a12a-2d3304dde88a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="0b00f19c-5100-4499-bc9d-86b322f382c8">
+          <propertyInstance Id="d965ef25-4ab4-4d42-b692-733d097a82f6" name="TargetDirectory" value="ClassTemplate=\{PackageStructure}|EnumTemplate={PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="63c58734-e7e6-4b30-8286-21bf71cba991" />
+          </propertyInstance>
+          <elementDefinition Id="23dab540-9580-49de-a2d9-e5a7b3a091c2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d5391b1e-1c71-4960-88f3-f4cc431f2aaf">
+          <propertyInstance Id="c7e69368-caec-4df2-b99a-3fe70b231a0b" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="c68c4d61-bf3f-45ad-a466-aef246e4caf9" />
+          </propertyInstance>
+          <elementDefinition Id="6c56e7dd-070a-447a-806b-7d5c826c28b3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a3c833d9-5038-414d-b45b-36152170b74b">
+          <propertyInstance Id="74039fa8-74e3-4c92-89e6-e98c25fb8c0a" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="929895f0-2631-4589-89f3-5e53e2d09cee" />
+          </propertyInstance>
+          <elementDefinition Id="d5ebbc53-acd6-437f-8380-4608ad06a8e4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4327f8ca-24b6-4e02-8063-3d35603e4106">
+          <propertyInstance Id="cecfb9be-bc4a-4e9a-a939-26fa5abe7dc6" name="Parameters">
+            <elementDefinition Id="3de012a0-2cd4-4e72-9c29-8ef4806a5091" />
+          </propertyInstance>
+          <elementDefinition Id="ee0a7dd9-a723-4ce4-9e5c-573de567b811" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="874e2c36-de90-49b7-8d60-7a7bdfd483c4">
+      <profileInstance Id="1261fb10-c4cf-4ec0-904b-f77bd1fbb559" name="CSharpProfile">
+        <elementDefinition Id="74d7a904-7a7c-4274-b0ac-0144eb3f93c4" />
+      </profileInstance>
+      <elementDefinition Id="dbdc1d6d-e6d4-415d-abe5-93ca028076a0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e8f45ed5-535c-4827-a5ac-98f1a9da6a7a">
+      <profileInstance Id="ff996c43-9e66-46c3-9b31-9d52f248af62" name="TextTemplateBindings">
+        <elementDefinition Id="a7b8c563-c5cc-47c0-bfdd-5bb4dd95bf9c" />
+      </profileInstance>
+      <elementDefinition Id="71b65627-6b89-4fa8-88f1-fc04e90e44f6" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="2f9a0d06-7367-4a70-966d-f9be7530442c" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="bbde9420-d41b-4b36-8698-eef309fd3e44" />
+        <nodes>
+          <initialNode Id="4c3a7732-bbb8-4222-a6e9-3001d7454e12" name="Initial1" isLeaf="false">
+            <description>关注公众号</description>
+            <elementDefinition Id="b55f0960-12f1-424d-9456-dc6668ad7cc9" />
+            <flowNodeTargets>
+              <controlFlow Id="0fe2ec5e-ee75-4c3a-95ad-c99af4c236db" isLeaf="false">
+                <opaqueActionMoniker Id="fa806e1f-4511-4366-8ed9-f5bbada791a7" LastKnownName="关注公众号" />
+                <elementDefinition Id="591854ea-a956-4e66-bca9-9457ef955d5f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="fa806e1f-4511-4366-8ed9-f5bbada791a7" name="关注公众号" isLeaf="false">
+            <elementDefinition Id="5a0f49a6-a906-4268-856c-3718f82d580c" />
+            <flowNodeTargets>
+              <controlFlow Id="4f72f017-5b97-4677-b4d5-90ba0d4d7cd6" isLeaf="false">
+                <decisionNodeMoniker Id="90872407-1e30-485b-92c2-43639a191a04" LastKnownName="Decision1" />
+                <elementDefinition Id="49ba6164-7e13-48ae-a8c4-103a97001622" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="90872407-1e30-485b-92c2-43639a191a04" name="Decision1" isLeaf="false">
+            <description>重复OPENID</description>
+            <elementDefinition Id="d6dac6fd-65dd-4f83-b595-835a901f50de" />
+            <flowNodeTargets>
+              <controlFlow Id="bd913a0a-bf8e-4c89-ab35-45b5ae42eb35" guard="不存在OPENID" isLeaf="false">
+                <opaqueActionMoniker Id="a69a4083-e1e6-4272-8cba-59bd141f96b8" LastKnownName="输入手机号" />
+                <elementDefinition Id="3a97cd6c-fcde-4398-b169-43d11fb08929" />
+              </controlFlow>
+              <controlFlow Id="26a16b6b-7be0-4f56-ba94-18b88a14ddfa" guard="存在OPENID" isLeaf="false">
+                <activityFinalNodeMoniker Id="c4f7e93e-c2c1-4164-857e-7f84b6da13fc" LastKnownName="ActivityFinal1" />
+                <description>存在OPENID</description>
+                <elementDefinition Id="0544a989-76a7-4c93-87dc-2e19c81e3529" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="a69a4083-e1e6-4272-8cba-59bd141f96b8" name="输入手机号" isLeaf="false">
+            <elementDefinition Id="6d02dc68-5276-444c-86e2-d8492571cd80" />
+            <flowNodeTargets>
+              <controlFlow Id="dfb51e96-f3dc-466b-9103-569a515fe217" isLeaf="false">
+                <decisionNodeMoniker Id="9838b69d-ad6d-4012-b435-58ef6302d650" LastKnownName="Decision2" />
+                <elementDefinition Id="57b7233c-d544-4017-8868-27ae1384a501" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="c4f7e93e-c2c1-4164-857e-7f84b6da13fc" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="fec817f2-1213-4f50-9bec-9bbbcc036740" />
+          </activityFinalNode>
+          <decisionNode Id="9838b69d-ad6d-4012-b435-58ef6302d650" name="Decision2" isLeaf="false">
+            <elementDefinition Id="84756bf8-7bdc-4e58-b4c0-71245cc3e252" />
+            <flowNodeTargets>
+              <controlFlow Id="1dd98eb6-4668-4762-aba3-a7253aa32ef9" guard="无手机号" isLeaf="false">
+                <opaqueActionMoniker Id="3f10ac39-064d-4241-976f-529ead95031d" LastKnownName="创建用户并绑定OPENID与手机号" />
+                <elementDefinition Id="ff2abff8-6f4f-40e8-bab7-47ba3bc2a73a" />
+              </controlFlow>
+              <controlFlow Id="f8017eea-7c30-4e59-af49-53e5ee3a2e01" guard="已有手机号" isLeaf="false">
+                <opaqueActionMoniker Id="5271340d-717a-4df4-875c-0b5eefbd2b63" LastKnownName="绑定OPENID 与手机号" />
+                <elementDefinition Id="f2d78467-8d25-4b7c-b0b4-91f40e808c3e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="5271340d-717a-4df4-875c-0b5eefbd2b63" name="绑定OPENID 与手机号" isLeaf="false">
+            <elementDefinition Id="3e08585a-bb82-43d8-b801-a6f7a556b162" />
+            <flowNodeTargets>
+              <controlFlow Id="d1bc50f3-f17d-486f-9951-91a6008cc884" isLeaf="false">
+                <activityFinalNodeMoniker Id="c4f7e93e-c2c1-4164-857e-7f84b6da13fc" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="dbff7e3c-34ce-4ee6-b737-386a9803738c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3f10ac39-064d-4241-976f-529ead95031d" name="创建用户并绑定OPENID与手机号" isLeaf="false">
+            <elementDefinition Id="a3a4d430-9f9b-4685-9fde-80165b517b9a" />
+            <flowNodeTargets>
+              <controlFlow Id="531db4f1-fa9c-4341-9524-09fddf488177" isLeaf="false">
+                <activityFinalNodeMoniker Id="c4f7e93e-c2c1-4164-857e-7f84b6da13fc" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="bd30d128-6b80-48cf-b63d-8d11624ebf33" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="465d52c5-0d51-46b4-be5e-21d27d9ef6d9" name="ModelingProject">
+    <elementDefinition Id="5cb65378-23fd-4a1c-9d5a-f6bbd71f3d9d" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8f7bd190-f5ad-4ec8-b59c-2775409c3010">
+        <profileInstance Id="e32edf8f-f0c3-4393-973f-bc527efd7202" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="98317c79-dcc3-4025-884e-68bca3c3b0fe">
+        <profileInstance Id="bd02ea4e-53cf-42dd-ab4a-627b3aeb7ea5" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

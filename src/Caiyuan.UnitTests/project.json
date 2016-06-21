@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0-*",
+
+  "testRunner": "mstest",
+
+  "dependencies": {
+    "Caiyuan": "1.0.0-*",
+    "Caiyuan.DB.Models": "1.0.0-*",
+    "dotnet-test-mstest": "1.0.1-preview",
+    "MSTest.TestFramework": "1.0.0-preview",
+    "Autofac.Extensions.DependencyInjection": "4.0.0-rc2-*"
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": [
+        "dnxcore50",
+        "portable-net45+win8"
+      ],
+
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "version": "1.0.0-rc2-3002702",
+          "type": "platform"
+        }
+      }
+    }
+  }
+}

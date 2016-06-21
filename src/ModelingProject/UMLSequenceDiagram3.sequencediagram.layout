@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sequenceDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLSequenceDiagram3">
+  <SequenceDesignerModelMoniker Id="04122ac5-e670-48f5-ad01-1babd4fce16d" />
+  <nestedChildShapes>
+    <lifelineShape Id="6217901e-615d-46a2-80f6-f89c65de8fb8" absoluteBounds="2.75, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="4d89f233-75ba-4859-ad3f-96189be6f21a" LastKnownName="病人" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="7caf1909-4cfc-49fc-8af7-a161d008d694" absoluteBounds="2.325, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="4d89f233-75ba-4859-ad3f-96189be6f21a" LastKnownName="病人" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="7e921f2b-57ab-410e-8e76-48ba104d8d40" absoluteBounds="2.75, 1, 0, 7">
+          <lifelineMoniker Id="4d89f233-75ba-4859-ad3f-96189be6f21a" LastKnownName="病人" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+  </nestedChildShapes>
+</sequenceDesignerDiagram>

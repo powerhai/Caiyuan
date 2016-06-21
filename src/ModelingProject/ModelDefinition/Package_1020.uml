@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="42b801dd-8d28-467c-a832-2de1c22c5685"
+  name="Domain" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="62c24dc7-3e59-4681-ac74-0fb3c2418b59"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="23d807cd-dbb5-4283-b41a-07c9b3142979">
+          <propertyInstance
+            Id="05fb60be-7e30-4c15-81fe-8c524091c18b"
+            name="BaseName"
+            value="Sagua.Yake.Domain" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="9950277d-e28e-4467-92b8-3a3d566197eb">
+          <propertyInstance
+            Id="51f63921-070c-4e77-a142-a6152ef32ae2"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="f7434609-b4a1-4958-ad40-bdcbb82c1138">
+          <propertyInstance
+            Id="8f7f68c7-1bf4-4e44-8bac-76696fe6da87"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="c8439ef9-7667-4959-bc5d-c512c74e9629"
+        name="UserType"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bd7365d4-4419-433e-8130-069ce300c30e"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8fdce0ee-0ed1-4e66-922f-6225ecd9c73c">
+                <propertyInstance
+                  Id="1ed21812-9c8f-45ae-b104-5b1ea1c0baf7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9e32c515-7fff-4d9d-9cb8-2b9270f8f453">
+                <propertyInstance
+                  Id="c669bf57-ecd8-4171-84ed-d275eb20cd1b"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4181be0a-5377-49b9-97d4-f33a47fa2df0">
+                <propertyInstance
+                  Id="7da512c2-fabd-4927-a9a2-6f6fdb281010"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="e1581508-e227-4683-bb25-c6d692c9463e"
+            name="Doctor">
+            <specification>
+              <literalInteger
+                Id="80138ec6-9b31-4e81-b935-777ba5316054"
+                name="Integer"
+                value="2" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="e6be7241-9794-4a9b-b289-6b73361525d5"
+            name="Patient">
+            <specification>
+              <literalInteger
+                Id="95f1fab6-d8a9-44e2-b7f8-f18a13bb28bb"
+                name="Integer"
+                value="1" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="5ce13e01-6349-438b-91c7-24cd15165cfc"
+            name="Muster">
+            <specification>
+              <literalInteger
+                Id="38fad15c-3709-47c0-a17e-a4c092c7f69f"
+                name="Integer"
+                value="3" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="f8e47e5d-5568-4230-9b3c-27547f03fb63"
+            name="Guest">
+            <specification>
+              <literalInteger
+                Id="9babfcbc-a91f-41af-b93f-4a97701bbe00"
+                name="Integer"
+                value="0" />
+            </specification>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="3a9b0fed-56a0-4f19-b74f-f1cf006a23e1"
+        name="OemType"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6cf5d468-405b-4f3a-8a10-0259d031b10a"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="24c32a70-532d-4106-becb-71f9e307bbcb">
+                <propertyInstance
+                  Id="0fa47640-63b6-4fbf-86ba-12032e88afc7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a9ae725f-2f14-4e2a-9390-165a30832914">
+                <propertyInstance
+                  Id="470ecd3e-2951-4566-aa12-48c48881cb6c"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2194bf16-e9a2-48cd-92fa-75342b4e5c11">
+                <propertyInstance
+                  Id="f3b0306b-aaf4-4fa6-874c-c14f4870e8da"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="c7f2052c-6685-4939-b1da-38c2d35276f7"
+            name="Yichi">
+            <specification>
+              <literalInteger
+                Id="ed75887e-b620-4c94-9168-b1d50ae235e3"
+                name="Integer"
+                value="0" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="5a407086-25b3-4b11-9492-eaf85e2ec8b2"
+            name="Yatuo">
+            <specification>
+              <literalInteger
+                Id="701d7c64-c4eb-423f-aa66-d936cebe2e92"
+                name="Integer"
+                value="1" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="276baef3-4628-4a30-9612-86ff91ef6372"
+            name="Baochiqi">
+            <specification>
+              <literalInteger
+                Id="31aea9c6-74f6-4adb-a316-93a8f3ae61ea"
+                name="Integer"
+                value="2" />
+            </specification>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="7b227d1f-9ef6-47a4-b711-3226b7d87359"
+        name="SexType"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="95a599a7-2fad-4267-9545-8f503d29e601"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5d70bcf4-a59c-4378-88a4-4da2196b6823">
+                <propertyInstance
+                  Id="272e45b9-0348-4cda-87d7-146339093605"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a822f20-56f6-423e-9c46-ce6828061e79">
+                <propertyInstance
+                  Id="cd8a3e8b-1bbb-4ef6-a0ef-60e0db41ed8d"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ace37fac-530f-4e02-8a25-9ff402e86c77">
+                <propertyInstance
+                  Id="75eb62cb-51d8-4f3d-958e-95e3f4c3fe98"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="6057c0cb-b706-4188-ac72-a4c3c6e62955"
+            name="Male">
+            <specification>
+              <literalInteger
+                Id="0ca86cd8-a112-4c09-a7ae-0fe8dd04bf4c"
+                name="Integer"
+                value="1" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="fdada9af-2431-488f-861b-72b76f4773f1"
+            name="Female">
+            <specification>
+              <literalInteger
+                Id="3845edd8-2729-45d5-b610-9c35a230ed08"
+                name="Integer"
+                value="2" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="5dc7d606-0d01-4882-9f26-37241551631d"
+            name="Unknown">
+            <specification>
+              <literalInteger
+                Id="5b258b34-1d25-4b78-a252-60693edcd17b"
+                name="Integer"
+                value="0" />
+            </specification>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="90ed4470-4c15-42a4-9d49-785f11334ee9"
+        name="DegreeType"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bb3a9eae-a913-4020-83c4-81835825c1ea"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e07ec81c-0be6-4cde-acc2-840085035abb">
+                <propertyInstance
+                  Id="517049df-8038-4f0b-88d5-512852bcb6f3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="61a06c27-a11d-46bc-8de5-92a50175f008">
+                <propertyInstance
+                  Id="6670f056-5d65-40c4-a260-a426806d0f5a"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef325a6d-a9a8-458b-a009-b6e20822b287">
+                <propertyInstance
+                  Id="b33eabe8-80cd-4982-b2a7-49e6691b8662"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="394ba689-4724-419a-9957-f6f18d2ee6da"
+            name="Unknown">
+            <specification>
+              <literalInteger
+                Id="8cf1a656-a22a-433b-a6cd-2e8186a1cb01"
+                name="Integer"
+                value="0" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="93e8b93a-5f15-4d57-92a5-30fdeda875f1"
+            name="PrimarySchool">
+            <specification>
+              <literalInteger
+                Id="5b6ba2c6-362a-4d16-9423-0a7a4baf1e93"
+                name="Integer"
+                value="1" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="8c15635e-471d-465f-9406-9c971df89165"
+            name="MiddelSchool">
+            <specification>
+              <literalInteger
+                Id="717f1f56-0c7c-42a3-9059-e370580d5b23"
+                name="Integer"
+                value="2" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="22763ffc-c25e-4b3a-a514-99d79378006e"
+            name="HighSchool">
+            <specification>
+              <literalInteger
+                Id="5648273f-69da-4e10-a558-9fba180884f2"
+                name="Integer"
+                value="3" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="dce5abd0-c0db-48ea-8ee9-2506ed2c8194"
+            name="JuniorCollege">
+            <specification>
+              <literalInteger
+                Id="66347b2c-90d5-454c-96db-0a412aaf6421"
+                name="Integer"
+                value="4" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="4a3b204f-9ec7-41c0-84a3-532ef4afb6df"
+            name="Bachelor">
+            <specification>
+              <literalInteger
+                Id="ebc44e6c-8fda-4d1e-bd3e-cded1f0c56ab"
+                name="Integer"
+                value="5" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="cc90450b-ef22-4167-b09b-6fc9e4ff0546"
+            name="Master">
+            <specification>
+              <literalInteger
+                Id="29a5b37e-2fb5-418d-9df6-0c5bc07685f4"
+                name="Integer"
+                value="6" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="fa6effa5-c0f3-4793-9ec4-3020a18798ec"
+            name="Doctor">
+            <specification>
+              <literalInteger
+                Id="90a9d4da-1dd2-454e-97bf-6ec467cb5186"
+                name="Integer"
+                value="7" />
+            </specification>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

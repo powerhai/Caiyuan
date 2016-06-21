@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ff40c662-19d2-41ed-a7c6-40bb41783abc" name="UseCase_ClinicMgmtService" linkedPackageId="7eac8a88-e346-434b-a3f2-1f2143016bde" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="304c2cbb-6dfb-4559-98d5-07d6614f8afe" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="972bc036-332d-461d-a0b8-f370747909df" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b46c784d-aa9a-4a72-ab86-dd6bc24db6ae">
+          <propertyInstance Id="59d28430-2d31-40f6-8a10-e8dae8a9e5a8" name="BaseName">
+            <elementDefinition Id="c51802c8-5965-4a83-93f9-1d2842fca334" />
+          </propertyInstance>
+          <elementDefinition Id="634c93cb-75e2-415e-b302-9845fc7f7987" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="9b2c6631-96e5-4e47-8292-6ed3609685a5">
+          <propertyInstance Id="eb70964e-d852-431f-a311-7a86c2bed5dc" name="ClrAttributes">
+            <elementDefinition Id="6e657611-a91e-47ef-a938-1e1f299f1adb" />
+          </propertyInstance>
+          <elementDefinition Id="68c7a2b2-f0c4-4e27-a85e-09d6f04e1db0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ff03fceb-5450-4a75-b6ff-a534f06aad90">
+          <propertyInstance Id="701be83c-4d37-4815-b057-4d48bef0ce25" name="Usings">
+            <elementDefinition Id="e9141504-7a1d-42e9-a7c7-980e8068c80e" />
+          </propertyInstance>
+          <elementDefinition Id="4c2b0320-a57c-41e2-896a-b305be6fff70" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="6b6d5de1-a926-4326-af7e-0f90fd017145" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="b1a6a488-d5fd-46fe-8d4b-77569e27f1fb" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8c93c77a-eff8-4a1f-9032-0775206d31eb">
+          <propertyInstance Id="be949511-b1b2-476a-bddb-c15fb044efa2" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="721ec807-2bdc-43bc-8d2e-cf5a582b21ed" />
+          </propertyInstance>
+          <elementDefinition Id="adae40fb-e1dd-4e8a-b31c-92ad5c3db58e" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7da00f02-5d95-4c66-a4ff-e4475d924265">
+          <propertyInstance Id="436d03f3-2d21-4d30-8fcb-5f5fbb591968" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="e2c1da1a-0f40-4e7e-a8e6-2d8d7815820a" />
+          </propertyInstance>
+          <elementDefinition Id="ff313e52-5e47-4e7e-8d31-d3bdf4b79dd8" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="492cbb77-a363-4607-99f7-bf3226673bc7">
+          <propertyInstance Id="5e3848ea-27bc-4fa4-97b5-b65b2a99c47e" name="ProjectPath" value="ClassTemplate=..\Sagua.Yake.DBModels\Sagua.Yake.DBModels.csproj|EnumTemplate=..\Sagua.Yake.Domain\Sagua.Yake.Domain.csproj|InterfaceTemplate=..\ModelingProjectLib\ModelingProjectLib.csproj|StructTemplate=..\ModelingProjectLib\ModelingProjectLib.csproj">
+            <elementDefinition Id="614240b0-68db-4202-aca3-a7256ac3bbfd" />
+          </propertyInstance>
+          <elementDefinition Id="0b695498-a9be-4362-a12a-2d3304dde88a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="94856123-5ee8-4b09-9eb5-781ad959484d">
+          <propertyInstance Id="88b8b95c-b550-46ac-8953-5e470148a47d" name="TargetDirectory" value="ClassTemplate=\{PackageStructure}|EnumTemplate={PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="63c58734-e7e6-4b30-8286-21bf71cba991" />
+          </propertyInstance>
+          <elementDefinition Id="23dab540-9580-49de-a2d9-e5a7b3a091c2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="aecc888e-f7af-40bf-bffb-e5d29b902e91">
+          <propertyInstance Id="a5e5f69d-5032-4be7-a41d-6046b2d0e473" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="c68c4d61-bf3f-45ad-a466-aef246e4caf9" />
+          </propertyInstance>
+          <elementDefinition Id="6c56e7dd-070a-447a-806b-7d5c826c28b3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7986ba1a-ade5-4275-92f3-f1fbb29383a2">
+          <propertyInstance Id="44b50ce7-dc49-4c39-979b-069222de0cb8" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="929895f0-2631-4589-89f3-5e53e2d09cee" />
+          </propertyInstance>
+          <elementDefinition Id="d5ebbc53-acd6-437f-8380-4608ad06a8e4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6a324710-27a6-49b7-9b20-5ed0aa7853b2">
+          <propertyInstance Id="420fe7bd-b813-4fc2-aecd-f68099b492ae" name="Parameters">
+            <elementDefinition Id="3de012a0-2cd4-4e72-9c29-8ef4806a5091" />
+          </propertyInstance>
+          <elementDefinition Id="ee0a7dd9-a723-4ce4-9e5c-573de567b811" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="ba08e171-b2cb-45a4-86af-503f3bf72be6" name="ClinicMgmtService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7819cd73-d4b8-4eef-9aa4-af27a7d53ae9" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="1b07d463-5850-4bcd-a9e8-938dfe6406e1" name="Add Clinic" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8ead21f7-741f-4353-8d0d-04aa1c984c46" />
+        <subjects>
+          <subsystemMoniker Id="ba08e171-b2cb-45a4-86af-503f3bf72be6" LastKnownName="ClinicMgmtService" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f27c63ee-bad6-4682-894d-4b2daaa55b2a" name="Disable Clinic" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1e1c7ffe-911c-4848-90ff-ad5fb1f0395d" />
+        <subjects>
+          <subsystemMoniker Id="ba08e171-b2cb-45a4-86af-503f3bf72be6" LastKnownName="ClinicMgmtService" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="49eda4fe-1747-4486-a415-ec43560b9ccb" name="Enable Clinic" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e6ab267-cd10-4caf-a6a0-de05e4ab872c" />
+        <subjects>
+          <subsystemMoniker Id="ba08e171-b2cb-45a4-86af-503f3bf72be6" LastKnownName="ClinicMgmtService" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="3683d879-5d3a-4450-a901-9393a7be9ad6" name="Update Clinic Infomation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b9db9b01-eadf-4b72-a025-5994a0c6a816" />
+        <subjects>
+          <subsystemMoniker Id="ba08e171-b2cb-45a4-86af-503f3bf72be6" LastKnownName="ClinicMgmtService" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="339f0bf9-433e-445b-be16-db19a287ef32" name="Supervisor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="54d2deb4-0d22-4c07-83b3-945cbe3fc613" />
+        <targetEnds>
+          <association Id="4159d15f-af0b-4875-9953-11ab291d49b0" isDerived="false" sourceEndRoleName="Super Muater" targetEndRoleName="Add Clinic" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1b07d463-5850-4bcd-a9e8-938dfe6406e1" LastKnownName="Add Clinic" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4d4abb35-485e-4fb4-8533-2a3ccc3eedce" name="Super Muater" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="03c6c1bd-8f1b-4510-afe4-8d89d35d402f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="22d37544-006d-4bcb-affa-5431946c25ed" name="Add Clinic" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6a64e3fa-9895-4841-8e36-90364539037f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c82ee5ce-e47b-4020-a2f9-78413717501a" />
+          </association>
+          <association Id="be55d29b-c946-4de3-b6d8-143e754578b1" isDerived="false" sourceEndRoleName="Super Muater" targetEndRoleName="Disable Clinic" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f27c63ee-bad6-4682-894d-4b2daaa55b2a" LastKnownName="Disable Clinic" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cfb4f748-def6-492b-9014-301bc8597956" name="Super Muater" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dc8314d9-21a2-4d9e-87f7-bb9aaf3e935f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8dadaa5c-0a97-4768-b84a-27797baf80db" name="Disable Clinic" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2be5830f-d0fc-4561-8392-73ed9ce38a77" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ac2dac3f-b4f5-4103-a34c-1dc460f292be" />
+          </association>
+          <association Id="5de4cfcb-d903-416c-8f42-42fda9ec3b5b" isDerived="false" sourceEndRoleName="Super Muater" targetEndRoleName="Enable Clinic" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="49eda4fe-1747-4486-a415-ec43560b9ccb" LastKnownName="Enable Clinic" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb6c48cc-fb90-446f-bddc-cd83844b3852" name="Super Muater" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a03b8111-fa79-4aab-8762-efd3dab88e50" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="875c6a82-86fc-4148-9f00-918be6f91895" name="Enable Clinic" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="89b1d594-6c90-4760-895d-b228fa116ec5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3c75124b-aa2a-45e2-8738-88d7af09d495" />
+          </association>
+          <association Id="b484d365-fdea-479b-8d30-cba63a854664" isDerived="false" sourceEndRoleName="Super Muater" targetEndRoleName="Update Clinic Infomation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3683d879-5d3a-4450-a901-9393a7be9ad6" LastKnownName="Update Clinic Infomation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="33f6f2e6-33d9-4b76-9815-15bcc7cd03d7" name="Super Muater" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="68e95016-087e-4fdd-9ffb-0eafa93381a2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4fcca79a-7ad9-41a1-9d7d-cc39dce0f504" name="Update Clinic Infomation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="28a332a9-600b-4db0-b1d6-7a18770cc47c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cc256662-1b0a-4331-a7e1-75fb7d6a8fc6" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="846e9763-d506-49f2-b923-3b6e911c4e8a" name="Manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bda67fea-e471-48d9-88c7-4dec545c6b78" />
+        <targetEnds>
+          <association Id="73d6548a-4ca8-4f9b-b26d-65f62b2e1310" isDerived="false" sourceEndRoleName="Manager" targetEndRoleName="Update Clinic Infomation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3683d879-5d3a-4450-a901-9393a7be9ad6" LastKnownName="Update Clinic Infomation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5cccb03e-3624-4a0c-9686-8a1c90414728" name="Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f20cb3f8-3c62-4260-a710-5d6d87a00304" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc58756b-95dd-4f75-8bb3-5a36a01585d1" name="Update Clinic Infomation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4168aed3-3408-4a5b-91a3-1b7733b2e050" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5c38b9a8-9ee7-442b-a395-9234a43340ed" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="7eac8a88-e346-434b-a3f2-1f2143016bde" name="ModelingProject">
+    <elementDefinition Id="5cb65378-23fd-4a1c-9d5a-f6bbd71f3d9d" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b644ed79-a11a-4fa4-af44-1adb56d207f5">
+        <profileInstance Id="82fa2dd5-9d35-4558-ae90-119ff39a1af3" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ba21544c-2a45-40da-9703-7177fe9974ab">
+        <profileInstance Id="e998cd2b-c9d9-4399-9081-1e0fcd8a872e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="084a98b3-b153-4c19-a69c-021cd1e2e765">
+        <profileInstance Id="89b1ed74-f220-4c70-bc09-8c86cec2216b" name="CSharpProfile">
+          <elementDefinition Id="74d7a904-7a7c-4274-b0ac-0144eb3f93c4" />
+        </profileInstance>
+        <elementDefinition Id="dbdc1d6d-e6d4-415d-abe5-93ca028076a0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="48762b38-f176-4f09-9ced-d1e9254cd8f7">
+        <profileInstance Id="e09dac9c-65ae-4925-89b4-295e05e07af5" name="TextTemplateBindings">
+          <elementDefinition Id="a7b8c563-c5cc-47c0-bfdd-5bb4dd95bf9c" />
+        </profileInstance>
+        <elementDefinition Id="71b65627-6b89-4fa8-88f1-fc04e90e44f6" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
