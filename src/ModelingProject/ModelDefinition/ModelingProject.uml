@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="5cb65378-23fd-4a1c-9d5a-f6bbd71f3d9d"
   name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -24,6 +24,58 @@
           LastKnownLocation="ModelingProject.uml" />
       </annotatedElements>
     </comment>
+    <comment
+      Id="24af7f1c-6d71-4922-81cb-7ea54a4573be">
+      <body>http://weyake/bill/index</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="d6e5b097-fb10-4cbf-949a-5e4da7a531a4"
+          LastKnownName="点击菜单-帐单列表"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="fb654af2-5496-4d40-b0f1-4d7c9ea7c28f">
+      <body>检查是否已经登录</body>
+      <annotatedElements>
+        <decisionNodeMoniker
+          Id="7eee8667-111d-44e0-8bde-686850b8064b"
+          LastKnownName="Decision1"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="7d0c9f78-3aee-42f5-96b2-13a7e9456805">
+      <body>http://wechat/login?redir=weyake/bill/index</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="817e2b5e-3393-4eaa-9702-cf3caca2e2ca"
+          LastKnownName="WECHAT LOGING"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="be4580d6-ba32-46b9-897b-2b61f359e3e6">
+      <body>微信浏览器过来的？</body>
+      <annotatedElements>
+        <decisionNodeMoniker
+          Id="062e2271-1fd4-4915-aa5e-19b70f0e7ea3"
+          LastKnownName="Decision1"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="ac069817-94bd-45be-8006-356f31c2cd6a">
+      <body>登录了吗？</body>
+      <annotatedElements>
+        <decisionNodeMoniker
+          Id="2c5f5974-c18c-45ac-a5d1-5f412bafa1a6"
+          LastKnownName="Decision2"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="da68dfb9-1625-4d41-8ca1-bdb931b38c64" />
   </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance
@@ -1131,14 +1183,12 @@
                   LastKnownLocation="ModelingProject.uml" />
               </controlFlow>
               <controlFlow
-                Id="0544a989-76a7-4c93-87dc-2e19c81e3529"
-                guard="存在OPENID"
+                Id="26487ecc-7f5e-42b3-aa98-b6d427be18b1"
                 isLeaf="false">
-                <activityFinalNodeMoniker
-                  Id="fec817f2-1213-4f50-9bec-9bbbcc036740"
-                  LastKnownName="ActivityFinal1"
+                <opaqueActionMoniker
+                  Id="de7a6525-e7b3-4b82-abd1-8c0b432d4b9d"
+                  LastKnownName="消息：欢迎回来!"
                   LastKnownLocation="ModelingProject.uml" />
-                <description>存在OPENID</description>
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
@@ -1216,6 +1266,21 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+          <opaqueAction
+            Id="de7a6525-e7b3-4b82-abd1-8c0b432d4b9d"
+            name="消息：欢迎回来!"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d00c1f45-0bbf-408a-b493-eeaa9970a18b"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="fec817f2-1213-4f50-9bec-9bbbcc036740"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </packageHasNamedElement>
@@ -1228,12 +1293,6 @@
         isAbstract="false"
         isLeaf="false"
         isReentrant="false">
-        <ownedCommentsInternal>
-          <comment
-            Id="96f7c4fc-3c74-4c7a-8010-d05291ce0c7e">
-            <body>填写病历</body>
-          </comment>
-        </ownedCommentsInternal>
         <fragments>
           <behaviorExecutionSpecification
             Id="aa2ecf9b-04ae-4a58-851b-2d5749cb9b4a"
@@ -1640,22 +1699,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="37d84b14-c7f2-4c37-955e-e68baf70feeb"
-            name="MessageOccurrenceSpecification80">
-            <covered>
-              <lifelineMoniker
-                Id="55ab7e09-cd6b-4282-927d-a84572774eea"
-                LastKnownName="诊所业务调度系统"
-                LastKnownLocation="ModelingProject.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="083ffa29-9b8b-4c51-834f-566602adb853"
             name="MessageOccurrenceSpecification79">
             <covered>
               <lifelineMoniker
                 Id="da7a88dd-9d99-4c4b-9a39-dbaeb1e1682c"
                 LastKnownName="帐号管理系统"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="37d84b14-c7f2-4c37-955e-e68baf70feeb"
+            name="MessageOccurrenceSpecification80">
+            <covered>
+              <lifelineMoniker
+                Id="55ab7e09-cd6b-4282-927d-a84572774eea"
+                LastKnownName="诊所业务调度系统"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -1834,22 +1893,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="af35364b-c0c9-487a-b045-b333b71424e7"
-            name="MessageOccurrenceSpecification87">
-            <covered>
-              <lifelineMoniker
-                Id="9f3fa480-78bc-4bbf-aa39-dc63b4cd1bb4"
-                LastKnownName="医生"
-                LastKnownLocation="ModelingProject.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="97ff5892-bd07-4746-9b87-18d1498d900c"
             name="MessageOccurrenceSpecification88">
             <covered>
               <lifelineMoniker
                 Id="ff192a7f-9129-4f99-989e-804fc32ccb12"
                 LastKnownName="就诊系统"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="af35364b-c0c9-487a-b045-b333b71424e7"
+            name="MessageOccurrenceSpecification87">
+            <covered>
+              <lifelineMoniker
+                Id="9f3fa480-78bc-4bbf-aa39-dc63b4cd1bb4"
+                LastKnownName="医生"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -3456,13 +3515,698 @@
         isAbstract="false"
         isLeaf="false"
         isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="2c7827d9-165e-41f2-a72c-7bedcb06e7d0">
+            <body>建立用户档案</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="c08609a6-ed0a-4847-9f4a-ec0c70b180fe"
+                LastKnownName="BehaviorExecutionSpecification8"
+                LastKnownLocation="ModelingProject.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="651e1043-548e-4e71-95dc-df88a8be10a3">
+            <body>建立公众号</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="451de597-b7a0-425f-b329-6c78b82e3662"
+                LastKnownName="BehaviorExecutionSpecification9"
+                LastKnownLocation="ModelingProject.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="b9db6e1e-afa2-46c2-81c0-4feff68394a1">
+            <body>显示有人关注消息</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="ef3a8b66-6814-4226-91f1-74ab082557c6"
+                LastKnownName="BehaviorExecutionSpecification15"
+                LastKnownLocation="ModelingProject.uml" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="c45a68e1-09c1-4811-a533-492ba75fbcc6"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="d9812dbc-99d2-4ef9-a5d0-a2f01d559819"
+                LastKnownName="微信服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="758bdc1b-29ab-42b4-9220-1a506e513e62"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="5cbd16e2-34f6-405d-ad67-52af625c55d8"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="996614e5-c608-4bef-a17c-7947c2e2f3ed"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="20224d72-6540-4511-877a-247b7a49937a"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9b3898bc-42ff-4c06-9bd7-60ad96b9da02"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="5cbd16e2-34f6-405d-ad67-52af625c55d8"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8adaa76f-bd5c-4673-a1d4-c6e8492cb0ff"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d9812dbc-99d2-4ef9-a5d0-a2f01d559819"
+                LastKnownName="微信服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9e8806dc-12ad-4cd5-bca3-acddd9dcaaa0"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="8c82c22f-4f4f-4250-88a0-c85232381111"
+                LastKnownName="客户微信客户端"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="996614e5-c608-4bef-a17c-7947c2e2f3ed"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="d9812dbc-99d2-4ef9-a5d0-a2f01d559819"
+                LastKnownName="微信服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="c08609a6-ed0a-4847-9f4a-ec0c70b180fe"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="cbd287d1-e28e-40a5-99ec-309c68e5c29d"
+                LastKnownName="菜园服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="82d6f32a-9fd7-4027-8a56-ac30d061ec84"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f8e0cca1-119e-403b-84f6-7600274284a0"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0b438c84-0d1c-41d3-9e3a-190ba2ae1e96"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="62d4e51a-7907-463a-8e47-04ff5e2052e1"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f8e0cca1-119e-403b-84f6-7600274284a0"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6a64bd6c-3de3-4c58-bb60-2a6ef3cd17b4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cbd287d1-e28e-40a5-99ec-309c68e5c29d"
+                LastKnownName="菜园服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="20224d72-6540-4511-877a-247b7a49937a"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="d9812dbc-99d2-4ef9-a5d0-a2f01d559819"
+                LastKnownName="微信服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0b438c84-0d1c-41d3-9e3a-190ba2ae1e96"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="cbd287d1-e28e-40a5-99ec-309c68e5c29d"
+                LastKnownName="菜园服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9b3898bc-42ff-4c06-9bd7-60ad96b9da02"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="d9812dbc-99d2-4ef9-a5d0-a2f01d559819"
+                LastKnownName="微信服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="754716b2-0ce3-4ca7-b7f4-9b5df6f0be02"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="8c82c22f-4f4f-4250-88a0-c85232381111"
+                LastKnownName="客户微信客户端"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="758bdc1b-29ab-42b4-9220-1a506e513e62"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4293ee32-181a-4ee1-9685-f99c7b59b1cf"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d9812dbc-99d2-4ef9-a5d0-a2f01d559819"
+                LastKnownName="微信服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="ec89540e-b23c-437a-af65-53a19e287675"
+            name="BehaviorExecutionSpecification14">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="d9812dbc-99d2-4ef9-a5d0-a2f01d559819"
+                LastKnownName="微信服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="ef4d760c-55d7-4744-aef2-baaf7fadea04"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="6236fd58-b3ec-4d3a-9f3e-46b1de26b4d5"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1fd378da-2dac-42b8-920b-6460c7e8c997"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="efd7254b-d3c3-465b-a647-04c07763b0db"
+                LastKnownName="MessageOccurrenceSpecification37"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="6236fd58-b3ec-4d3a-9f3e-46b1de26b4d5"
+            name="ExecutionOccurrenceSpecification27">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="cbc0800f-f5ee-4118-8aaa-f433778ccad3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d9812dbc-99d2-4ef9-a5d0-a2f01d559819"
+                LastKnownName="微信服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1fd378da-2dac-42b8-920b-6460c7e8c997"
+            name="MessageOccurrenceSpecification36">
+            <covered>
+              <lifelineMoniker
+                Id="d9812dbc-99d2-4ef9-a5d0-a2f01d559819"
+                LastKnownName="微信服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d6b5594e-3fc7-4b99-94fb-faded2296371"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="8c82c22f-4f4f-4250-88a0-c85232381111"
+                LastKnownName="客户微信客户端"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="62d4e51a-7907-463a-8e47-04ff5e2052e1"
+            name="MessageOccurrenceSpecification35">
+            <covered>
+              <lifelineMoniker
+                Id="cbd287d1-e28e-40a5-99ec-309c68e5c29d"
+                LastKnownName="菜园服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="451de597-b7a0-425f-b329-6c78b82e3662"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8c82c22f-4f4f-4250-88a0-c85232381111"
+                LastKnownName="客户微信客户端"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="8a7c3ed8-7abb-462c-b19e-ccb0cd21f6a2"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="8c520301-158c-4f11-9d5c-78118c4c6ab6"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="89335043-53da-4c1c-959c-6da467494f51"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="8c520301-158c-4f11-9d5c-78118c4c6ab6"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0c673fdf-8320-4484-b759-b49e87da0253"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8c82c22f-4f4f-4250-88a0-c85232381111"
+                LastKnownName="客户微信客户端"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="89335043-53da-4c1c-959c-6da467494f51"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="8c82c22f-4f4f-4250-88a0-c85232381111"
+                LastKnownName="客户微信客户端"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="ef3a8b66-6814-4226-91f1-74ab082557c6"
+            name="BehaviorExecutionSpecification15">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c77f1cb7-9e3a-47b6-9664-dd1c9dd59461"
+                LastKnownName="医生微信客户端"
+                LastKnownLocation="ModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="bc28812c-5cbe-49be-80ef-a986f22ecc8c"
+                LastKnownName="ExecutionOccurrenceSpecification30"
+                LastKnownLocation="ModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f4577c53-5626-4efa-8359-abf9f7ede614"
+                LastKnownName="ExecutionOccurrenceSpecification29"
+                LastKnownLocation="ModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="06226f7e-c00a-4672-bc4c-9afbcd00a064"
+                LastKnownName="MessageOccurrenceSpecification38"
+                LastKnownLocation="ModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="82d6f32a-9fd7-4027-8a56-ac30d061ec84"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a021c501-aba7-4eb0-879c-3e4c012c982d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cbd287d1-e28e-40a5-99ec-309c68e5c29d"
+                LastKnownName="菜园服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="f4577c53-5626-4efa-8359-abf9f7ede614"
+            name="ExecutionOccurrenceSpecification29">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="23cebb49-8eee-4d41-abf1-347d3db790f1"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c77f1cb7-9e3a-47b6-9664-dd1c9dd59461"
+                LastKnownName="医生微信客户端"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="efd7254b-d3c3-465b-a647-04c07763b0db"
+            name="MessageOccurrenceSpecification37">
+            <covered>
+              <lifelineMoniker
+                Id="d9812dbc-99d2-4ef9-a5d0-a2f01d559819"
+                LastKnownName="微信服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="06226f7e-c00a-4672-bc4c-9afbcd00a064"
+            name="MessageOccurrenceSpecification38">
+            <covered>
+              <lifelineMoniker
+                Id="c77f1cb7-9e3a-47b6-9664-dd1c9dd59461"
+                LastKnownName="医生微信客户端"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="ef4d760c-55d7-4744-aef2-baaf7fadea04"
+            name="ExecutionOccurrenceSpecification28">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8dda3c9a-dae6-4016-90f9-5447393fb8fa"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d9812dbc-99d2-4ef9-a5d0-a2f01d559819"
+                LastKnownName="微信服务器"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="8a7c3ed8-7abb-462c-b19e-ccb0cd21f6a2"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="facd08b4-db03-4af0-9b42-9e6e5937dfdf"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8c82c22f-4f4f-4250-88a0-c85232381111"
+                LastKnownName="客户微信客户端"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="bc28812c-5cbe-49be-80ef-a986f22ecc8c"
+            name="ExecutionOccurrenceSpecification30">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="091d15fe-b5a4-462b-b901-ff40fef3ba34"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c77f1cb7-9e3a-47b6-9664-dd1c9dd59461"
+                LastKnownName="医生微信客户端"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
         <lifelines>
           <lifeline
-            Id="17247f52-3a83-476d-82f6-07a91cea4e71"
-            name="病人"
+            Id="8c82c22f-4f4f-4250-88a0-c85232381111"
+            name="客户微信客户端"
             isActor="false"
-            lifelineDisplayName="‎病人‎" />
+            lifelineDisplayName="‎客户微信客户端‎">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="9e8806dc-12ad-4cd5-bca3-acddd9dcaaa0"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="754716b2-0ce3-4ca7-b7f4-9b5df6f0be02"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="ModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d6b5594e-3fc7-4b99-94fb-faded2296371"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="8c520301-158c-4f11-9d5c-78118c4c6ab6"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="8a7c3ed8-7abb-462c-b19e-ccb0cd21f6a2"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="c77f1cb7-9e3a-47b6-9664-dd1c9dd59461"
+            name="医生微信客户端"
+            isActor="false"
+            lifelineDisplayName="‎医生微信客户端‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="f4577c53-5626-4efa-8359-abf9f7ede614"
+                LastKnownName="ExecutionOccurrenceSpecification29"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="bc28812c-5cbe-49be-80ef-a986f22ecc8c"
+                LastKnownName="ExecutionOccurrenceSpecification30"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="d9812dbc-99d2-4ef9-a5d0-a2f01d559819"
+            name="微信服务器"
+            isActor="false"
+            lifelineDisplayName="‎微信服务器‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="5cbd16e2-34f6-405d-ad67-52af625c55d8"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="758bdc1b-29ab-42b4-9220-1a506e513e62"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="6236fd58-b3ec-4d3a-9f3e-46b1de26b4d5"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ef4d760c-55d7-4744-aef2-baaf7fadea04"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="cbd287d1-e28e-40a5-99ec-309c68e5c29d"
+            name="菜园服务器"
+            isActor="false"
+            lifelineDisplayName="‎菜园服务器‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="f8e0cca1-119e-403b-84f6-7600274284a0"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="ModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="82d6f32a-9fd7-4027-8a56-ac30d061ec84"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="ModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
         </lifelines>
+        <messages>
+          <message
+            Id="91ea14c5-b166-4ade-a4d1-43bcab56b899"
+            name="发送关注消息"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9e8806dc-12ad-4cd5-bca3-acddd9dcaaa0"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="996614e5-c608-4bef-a17c-7947c2e2f3ed"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="10a2b1ec-2888-4c25-8051-ae8f52f50e18"
+            name="发送关注事件"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="20224d72-6540-4511-877a-247b7a49937a"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0b438c84-0d1c-41d3-9e3a-190ba2ae1e96"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="79986cd3-d93b-4f98-b81d-f7d850731edd"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9b3898bc-42ff-4c06-9bd7-60ad96b9da02"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="754716b2-0ce3-4ca7-b7f4-9b5df6f0be02"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="fd4c79af-160c-4b9e-9a37-2a3a3dadc7f9"
+            name="请求发送消息给医生"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="62d4e51a-7907-463a-8e47-04ff5e2052e1"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1fd378da-2dac-42b8-920b-6460c7e8c997"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="0548c623-4d5b-41d9-b666-2d47ed46dbe3"
+            name="Message1"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d6b5594e-3fc7-4b99-94fb-faded2296371"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="89335043-53da-4c1c-959c-6da467494f51"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="02373f41-7002-4ca8-a11f-27e69c2cae59"
+            name="发送消息-有人关注了"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="efd7254b-d3c3-465b-a647-04c07763b0db"
+                LastKnownName="MessageOccurrenceSpecification37"
+                LastKnownLocation="ModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="06226f7e-c00a-4672-bc4c-9afbcd00a064"
+                LastKnownName="MessageOccurrenceSpecification38"
+                LastKnownLocation="ModelingProject.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
       </interaction>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -3600,6 +4344,1798 @@
             LastKnownLocation="ModelingProject.uml" />
         </subjects>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="ded56e13-881a-4df8-bd70-5da5bf4aac21"
+        name="SystemManager"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="9de90a0a-4f58-4f4a-93d1-04e2176f6f24"
+            isDerived="false"
+            sourceEndRoleName="SystemManager"
+            targetEndRoleName="View Clinic Infomation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="063f3413-181f-4daa-aa21-ae320460869a"
+              LastKnownName="View Clinic Infomation"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d74134cc-f6ec-41c6-be21-a5aad8890045"
+                  name="SystemManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c4848b7c-4f1a-4e07-8247-2ac6bf73ed68"
+                  name="View Clinic Infomation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a665d2f5-15f3-4f16-8dfb-fa52bdd4c7d8"
+            isDerived="false"
+            sourceEndRoleName="SystemManager"
+            targetEndRoleName="Create clinic"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="08eb0eb6-26b2-4d76-a2be-80820ee39464"
+              LastKnownName="Create clinic"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d77e837a-9cde-4474-a842-330daadbf053"
+                  name="SystemManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="21f73378-0d8a-4e90-9243-df0afb0311c1"
+                  name="Create clinic"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="717c99f9-40d4-4c1f-a33d-8b264365bbdd"
+            isDerived="false"
+            sourceEndRoleName="SystemManager"
+            targetEndRoleName="Update clinic's information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ce1cdcf5-9ec8-4d81-92d2-20fa29ba7885"
+              LastKnownName="Update clinic's information"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a8cfcb7-1bd6-46d5-9983-605b09d5cfae"
+                  name="SystemManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c0d1726a-6854-46fa-802f-122a680ade25"
+                  name="Update clinic's information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5f84099c-01fb-4f7b-9e19-26d8dfda6655"
+        name="ClinicMaster"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a26d9701-0e6b-4108-84ce-120ffc5f9dbb"
+            isDerived="false"
+            sourceEndRoleName="ClinicMaster"
+            targetEndRoleName="View Clinic Infomation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="063f3413-181f-4daa-aa21-ae320460869a"
+              LastKnownName="View Clinic Infomation"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b70b59b7-987d-4e95-a556-1a932075b430"
+                  name="ClinicMaster"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b6cc8b21-bdb6-4cfe-8d57-8318ce92767d"
+                  name="View Clinic Infomation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="adfa56d1-1e95-411c-a178-7379214c1e78"
+            isDerived="false"
+            sourceEndRoleName="ClinicMaster"
+            targetEndRoleName="Update clinic's information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ce1cdcf5-9ec8-4d81-92d2-20fa29ba7885"
+              LastKnownName="Update clinic's information"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="63d41c47-4ebb-42b4-a2b4-5cd4a69c4311"
+                  name="ClinicMaster"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="274e9c36-6d62-41b4-b796-00240b38c194"
+                  name="Update clinic's information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a538c963-cec5-4e9e-8e6a-86addffd2b5e"
+            isDerived="false"
+            sourceEndRoleName="ClinicMaster"
+            targetEndRoleName="Register a clinic"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3020cbac-e557-41ad-968c-febe42f3a950"
+              LastKnownName="Register a clinic"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="422ff239-fed9-455c-b22d-f3a5d0e6635a"
+                  name="ClinicMaster"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dc6b9b31-c365-4497-a005-b0098262ac30"
+                  name="Register a clinic"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fda803ce-2f33-498f-89f2-5bde214204c8"
+            isDerived="false"
+            sourceEndRoleName="ClinicMaster"
+            targetEndRoleName="View patient information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6c234943-3d48-455d-8f16-36b6ebaade58"
+              LastKnownName="View patient information"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c7400a98-9d8d-4f73-8176-b4d85bc373c1"
+                  name="ClinicMaster"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ea751c04-2d80-4b15-8ccd-005754f86b19"
+                  name="View patient information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2a247a5f-d9ab-4ab9-8a4e-9ecb016499bf"
+            isDerived="false"
+            sourceEndRoleName="ClinicMaster"
+            targetEndRoleName="Create doctor"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e9cd624d-6355-4134-9b5c-1f08bb360a12"
+              LastKnownName="Create doctor"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2fb4db56-2ddd-4943-9a50-02f2c6e64dd0"
+                  name="ClinicMaster"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0ed53d76-6e51-4345-8b35-737a89485d41"
+                  name="Create doctor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="42a4715f-dc64-494f-9c07-60257fe64cd6"
+            isDerived="false"
+            sourceEndRoleName="ClinicMaster"
+            targetEndRoleName="Update doctor's information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="21356b2b-fde9-4691-a440-3fd4fe891ce2"
+              LastKnownName="Update doctor's information"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16b68f78-a775-45ab-9020-87156342b1c9"
+                  name="ClinicMaster"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="83784dca-4e7d-42bd-a0b0-2da93cfcf05b"
+                  name="Update doctor's information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d3ee34f3-798d-46b0-b0d6-56a3e7483150"
+            isDerived="false"
+            sourceEndRoleName="ClinicMaster"
+            targetEndRoleName="View doctor's  information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5d00da09-352b-4cc0-a344-73804cff1962"
+              LastKnownName="View doctor's  information"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="05c6cef7-60cc-4247-91e1-ac130f0d22a0"
+                  name="ClinicMaster"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ab33452-d34f-4c3a-9c7b-6ba49cd6568b"
+                  name="View doctor's  information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5864e408-b9b2-4c92-8a9a-d98a1763333f"
+        name="Doctor"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="9417653c-cbef-4a8e-86d0-4f288aa844ae"
+            isDerived="false"
+            sourceEndRoleName="Doctor"
+            targetEndRoleName="View Clinic Infomation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="063f3413-181f-4daa-aa21-ae320460869a"
+              LastKnownName="View Clinic Infomation"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="91ebebc0-09e9-4628-8e24-a1ff9e7694c0"
+                  name="Doctor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="adbd60a9-c8a4-4f61-a5e6-36d7c610d77e"
+                  name="View Clinic Infomation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a673c2c3-8a4f-452d-8366-d8c87c82a244"
+            isDerived="false"
+            sourceEndRoleName="Doctor"
+            targetEndRoleName="Create patient"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f7a9e9eb-76d1-43c2-9349-a31ed9d1b8e5"
+              LastKnownName="Create patient"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0458526f-a786-43a7-b93f-33b957dd79a3"
+                  name="Doctor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5cff0cb0-4d67-4353-8059-1246235e8318"
+                  name="Create patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="587612df-8c8b-465e-92af-feb36d4ebc8c"
+            isDerived="false"
+            sourceEndRoleName="Doctor"
+            targetEndRoleName="Update patient information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7476cbda-6139-47a9-9a68-4cb1c009842e"
+              LastKnownName="Update patient information"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="050a6b08-d071-4939-8542-e9a7b52e74c1"
+                  name="Doctor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="59eb7ef8-4ac8-4ffc-a572-c3c2ee12b11b"
+                  name="Update patient information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9cc14db8-ba3a-4b11-ac99-a441843acd74"
+            isDerived="false"
+            sourceEndRoleName="Doctor"
+            targetEndRoleName="View patient information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6c234943-3d48-455d-8f16-36b6ebaade58"
+              LastKnownName="View patient information"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="44ea14d2-0b0a-40af-8f89-609f3ee2754a"
+                  name="Doctor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="11b3e912-6f33-4491-a758-4fa458b2008e"
+                  name="View patient information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c17ca9a7-d05f-4837-bed9-1c9ce1ce757b"
+            isDerived="false"
+            sourceEndRoleName="Doctor"
+            targetEndRoleName="Update doctor's information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="21356b2b-fde9-4691-a440-3fd4fe891ce2"
+              LastKnownName="Update doctor's information"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f2352dab-7b1b-4ca0-9c6e-dea3fd6f2494"
+                  name="Doctor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ceb1819f-dd8c-4a31-bacd-8999be7f8fda"
+                  name="Update doctor's information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1f0e2801-8346-4b38-af5b-3dd4cc7aff18"
+            isDerived="false"
+            sourceEndRoleName="Doctor"
+            targetEndRoleName="View doctor's  information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5d00da09-352b-4cc0-a344-73804cff1962"
+              LastKnownName="View doctor's  information"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e84fe788-ff4d-4af9-bbf5-e9ad6a1dbf58"
+                  name="Doctor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c7ae9946-ba1d-4d65-a657-d2e2e741e1c8"
+                  name="View doctor's  information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="63f60678-dcfa-47ef-b68a-10f835c84aa8"
+            isDerived="false"
+            sourceEndRoleName="Doctor"
+            targetEndRoleName="Create bill"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="24960bc8-bf3e-4852-801f-6f7ebec7aa04"
+              LastKnownName="Create bill"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9ad8a2f5-470c-4d45-9596-fbafe898cb45"
+                  name="Doctor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3979fd0d-81a0-40fd-9256-dbfc6d114b66"
+                  name="Create bill"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="4685788d-c80f-4b42-be0f-c6c98de1f732"
+        name="Patient"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d4aa03f4-9a69-4b82-ba3f-06a732ac3ad8"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="View Clinic Infomation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="063f3413-181f-4daa-aa21-ae320460869a"
+              LastKnownName="View Clinic Infomation"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a8f9601-c0f4-497d-ae24-2847634ba935"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bf6fcb90-2fe3-4ecb-9bf6-2ac60e1a0eec"
+                  name="View Clinic Infomation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7f0f9f7a-4597-4770-bc8b-7fe70e07bbf0"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="Create patient"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f7a9e9eb-76d1-43c2-9349-a31ed9d1b8e5"
+              LastKnownName="Create patient"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d6fff014-2fa9-4b6e-aed1-f51f61127daf"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="588f2f18-5926-4002-8557-57b08ea94af5"
+                  name="Create patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="efaa2477-bf43-4f9b-92c4-c7520452881a"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="Update patient information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7476cbda-6139-47a9-9a68-4cb1c009842e"
+              LastKnownName="Update patient information"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b279f28-4223-440a-b589-5f4aef460703"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d2a7637c-2215-49a6-b571-444116c9cd41"
+                  name="Update patient information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="260edec4-d2dc-4b8e-8ee9-02aa06ac1ba6"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="View patient information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6c234943-3d48-455d-8f16-36b6ebaade58"
+              LastKnownName="View patient information"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a0143f16-08f9-4372-a836-4ce09e83dec2"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6afbca50-e23b-4a5a-9882-7708e069e71c"
+                  name="View patient information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="41e93d0d-26a1-4af5-a6cc-3e0d4ff75d47"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="View doctor's  information"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5d00da09-352b-4cc0-a344-73804cff1962"
+              LastKnownName="View doctor's  information"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="683c55dd-c24b-43ea-ae10-bb068dd7bd1a"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7c80d205-43c3-4c4c-96a3-b943c1f74995"
+                  name="View doctor's  information"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="17d8081d-22a0-4ff0-938c-69e110f0866b"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="View bills"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7bf69eb2-d2cb-4990-be6a-cb1037bcd789"
+              LastKnownName="View bills"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e467a659-5e18-43c3-a80c-d645bf59df69"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="637ed3a8-84da-4163-bfbe-179f8f3ce0ef"
+                  name="View bills"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="052576a5-aa77-42e6-8d3e-4023db05191f"
+            isDerived="false"
+            sourceEndRoleName="Patient"
+            targetEndRoleName="View bill detials"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f9e47afc-7421-437a-b47d-88010f31d4d7"
+              LastKnownName="View bill detials"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="79d57f76-3ca5-492f-bf63-ceb933407358"
+                  name="Patient"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="50007931-030d-408e-8cd2-aa7d676ed217"
+                  name="View bill detials"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="88b25a5d-e022-40c3-8dfd-a22de4d936cd"
+        name="UserManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c519664e-8af0-40ea-be22-887c067abe58"
+        name="Register"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="88b25a5d-e022-40c3-8dfd-a22de4d936cd"
+            LastKnownName="UserManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="414d655c-ba90-4909-85d6-9127ab1c8d57"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2298095b-d626-48f4-a276-13dab5bd9bce"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Register"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c519664e-8af0-40ea-be22-887c067abe58"
+              LastKnownName="Register"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7f7d3d87-c2ee-45ca-8e0d-a1bfd23dd15e"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dce02c58-240d-4189-8070-b26c83559910"
+                  name="Register"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8960ee2a-f83d-4f90-995f-7c37759bd416"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Update user  infomation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b54c3b36-1b73-4912-a24d-97afbe41460c"
+              LastKnownName="Update user  infomation"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9f1a0f14-6376-47c3-b02a-9f78d9d2c3e8"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c99bac6c-66a5-4f45-87e7-27e9487c9c71"
+                  name="Update user  infomation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d05c9275-3dca-48f4-acb3-9857159d1f51"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Update password"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9e908a86-6b69-4dbe-8a9b-772692769c1e"
+              LastKnownName="Update password"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="edc1bacc-5a69-406b-9d4e-ca8bf62f282d"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fb40c34d-51fb-4db6-a15d-51906f207a09"
+                  name="Update password"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3c3e802b-3c30-4003-8140-d26d6ac09dbc"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Login"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7ff4bdd2-3e8e-4e17-8b80-a73aa1c06001"
+              LastKnownName="Login"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="694eb473-3169-4cc6-979f-aedc95368ff9"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c7dd340c-fd88-41d9-aa86-c34c5c7756d9"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f4dcd564-2afd-49ec-8af3-a6af006b30a0"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Logout"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6759d677-0c34-46aa-994b-b8e875b364d3"
+              LastKnownName="Logout"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c5d56f5f-8f48-4bc9-90d1-bdb830250ce1"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="47c9525d-dc50-471b-b0d3-db3190b29aa8"
+                  name="Logout"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b54c3b36-1b73-4912-a24d-97afbe41460c"
+        name="Update user  infomation"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="88b25a5d-e022-40c3-8dfd-a22de4d936cd"
+            LastKnownName="UserManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9e908a86-6b69-4dbe-8a9b-772692769c1e"
+        name="Update password"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="88b25a5d-e022-40c3-8dfd-a22de4d936cd"
+            LastKnownName="UserManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="e1baad7c-ac58-43dc-8db1-fa20aaa00339"
+        name="ClinicInfoManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="063f3413-181f-4daa-aa21-ae320460869a"
+        name="View Clinic Infomation"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e1baad7c-ac58-43dc-8db1-fa20aaa00339"
+            LastKnownName="ClinicInfoManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ce1cdcf5-9ec8-4d81-92d2-20fa29ba7885"
+        name="Update clinic's information"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e1baad7c-ac58-43dc-8db1-fa20aaa00339"
+            LastKnownName="ClinicInfoManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3020cbac-e557-41ad-968c-febe42f3a950"
+        name="Register a clinic"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e1baad7c-ac58-43dc-8db1-fa20aaa00339"
+            LastKnownName="ClinicInfoManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="08eb0eb6-26b2-4d76-a2be-80820ee39464"
+        name="Create clinic"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="e1baad7c-ac58-43dc-8db1-fa20aaa00339"
+            LastKnownName="ClinicInfoManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="c3f39b3d-72b3-48a7-913b-d871de2557dd"
+        name="PatientManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f7a9e9eb-76d1-43c2-9349-a31ed9d1b8e5"
+        name="Create patient"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c3f39b3d-72b3-48a7-913b-d871de2557dd"
+            LastKnownName="PatientManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7476cbda-6139-47a9-9a68-4cb1c009842e"
+        name="Update patient information"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c3f39b3d-72b3-48a7-913b-d871de2557dd"
+            LastKnownName="PatientManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6c234943-3d48-455d-8f16-36b6ebaade58"
+        name="View patient information"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c3f39b3d-72b3-48a7-913b-d871de2557dd"
+            LastKnownName="PatientManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="195a38f6-a6f4-448b-bba4-d52faaf8882d"
+        name="DoctorManger"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e9cd624d-6355-4134-9b5c-1f08bb360a12"
+        name="Create doctor"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="195a38f6-a6f4-448b-bba4-d52faaf8882d"
+            LastKnownName="DoctorManger"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="21356b2b-fde9-4691-a440-3fd4fe891ce2"
+        name="Update doctor's information"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="195a38f6-a6f4-448b-bba4-d52faaf8882d"
+            LastKnownName="DoctorManger"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5d00da09-352b-4cc0-a344-73804cff1962"
+        name="View doctor's  information"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="195a38f6-a6f4-448b-bba4-d52faaf8882d"
+            LastKnownName="DoctorManger"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="dd57f85d-7559-414c-8beb-ea63bdc76e25"
+        name="BillManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="24960bc8-bf3e-4852-801f-6f7ebec7aa04"
+        name="Create bill"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="dd57f85d-7559-414c-8beb-ea63bdc76e25"
+            LastKnownName="BillManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7bf69eb2-d2cb-4990-be6a-cb1037bcd789"
+        name="View bills"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="dd57f85d-7559-414c-8beb-ea63bdc76e25"
+            LastKnownName="BillManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f9e47afc-7421-437a-b47d-88010f31d4d7"
+        name="View bill detials"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="dd57f85d-7559-414c-8beb-ea63bdc76e25"
+            LastKnownName="BillManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="d49bb627-5c53-49e7-95c8-9f5f83a32552"
+        name="PayService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="9a21aba4-e0ab-4081-a0ca-fe3d483394dd"
+        name="CureService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="74f7c9aa-ada4-49e5-bb1f-e2b25c326bce"
+        name="BusinessDispatcher"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="c02faee8-146f-4de1-a40c-4523fd2c63d2"
+        name="ReservationService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="29a10d67-f3a5-42a6-a9e8-a79a918a0ad2"
+        name="Create reservation"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c02faee8-146f-4de1-a40c-4523fd2c63d2"
+            LastKnownName="ReservationService"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="da16575c-64ee-4447-af51-6581b138999b"
+        name="Update reservation"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c02faee8-146f-4de1-a40c-4523fd2c63d2"
+            LastKnownName="ReservationService"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="144198be-8946-419a-a8ab-82e7d53b6ef9"
+        name="accept reservation"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c02faee8-146f-4de1-a40c-4523fd2c63d2"
+            LastKnownName="ReservationService"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="1231022d-fc5b-4f4e-a39f-81c509a2c3ea"
+        name="MessageService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="4bf378b3-c0bd-41b7-a218-0a7275db0bc6"
+        name="SignInManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7ff4bdd2-3e8e-4e17-8b80-a73aa1c06001"
+        name="Login"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="4bf378b3-c0bd-41b7-a218-0a7275db0bc6"
+            LastKnownName="SignInManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6759d677-0c34-46aa-994b-b8e875b364d3"
+        name="Logout"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="4bf378b3-c0bd-41b7-a218-0a7275db0bc6"
+            LastKnownName="SignInManager"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8adaa76f-bd5c-4673-a1d4-c6e8492cb0ff"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4293ee32-181a-4ee1-9685-f99c7b59b1cf"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6a64bd6c-3de3-4c58-bb60-2a6ef3cd17b4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a021c501-aba7-4eb0-879c-3e4c012c982d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0c673fdf-8320-4484-b759-b49e87da0253"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="facd08b4-db03-4af0-9b42-9e6e5937dfdf"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="cbc0800f-f5ee-4118-8aaa-f433778ccad3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8dda3c9a-dae6-4016-90f9-5447393fb8fa"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="23cebb49-8eee-4d41-abf1-347d3db790f1"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="091d15fe-b5a4-462b-b901-ff40fef3ba34"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="12cdbae9-1a29-45a0-922f-feb7eac71294"
+        name="Activity2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="2dda5c1f-9129-42eb-ab46-e02f1478fb33"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5f7e553b-0912-4250-b7e2-5031b616e1d2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d6e5b097-fb10-4cbf-949a-5e4da7a531a4"
+                  LastKnownName="点击菜单-帐单列表"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="d6e5b097-fb10-4cbf-949a-5e4da7a531a4"
+            name="点击菜单-帐单列表"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8bba71aa-f072-4fa2-b73f-bf70fc542c4f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d7ea0045-6f75-4818-8cff-fdb3dfa93a79"
+                  LastKnownName="WEYAKE BILL"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="7eee8667-111d-44e0-8bde-686850b8064b"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3e1d4969-e956-499d-acb0-49bc11c62cac"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="817e2b5e-3393-4eaa-9702-cf3caca2e2ca"
+                  LastKnownName="WECHAT LOGING"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e5cbb648-d290-44ec-b85c-d34d17c3d3ab"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5d532e13-5557-420e-a6b0-09e32d3e83b0"
+                  LastKnownName="WEYAKE BILL"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="52b30630-a800-4fe1-9fe7-2aa419b4134e"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="817e2b5e-3393-4eaa-9702-cf3caca2e2ca"
+            name="WECHAT LOGING"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e58bbe1a-81e9-467a-a454-d6cf764fac0c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5d532e13-5557-420e-a6b0-09e32d3e83b0"
+                  LastKnownName="WEYAKE BILL"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5d532e13-5557-420e-a6b0-09e32d3e83b0"
+            name="WEYAKE BILL"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c87adb86-2c93-464e-bbaa-5b9119bd7eab"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="52b30630-a800-4fe1-9fe7-2aa419b4134e"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d7ea0045-6f75-4818-8cff-fdb3dfa93a79"
+            name="WEYAKE BILL"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="feae2b89-cbc7-4255-9d63-41992a894b38"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="7eee8667-111d-44e0-8bde-686850b8064b"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="46314897-7f51-4ec9-bd16-0a3cdafc0ace"
+        name="Activity3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="32939640-4e9f-405e-88ba-69e1a4177497"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8d7dc135-9d6a-469e-8e63-d09a80be46b0"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="062e2271-1fd4-4915-aa5e-19b70f0e7ea3"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <decisionNode
+            Id="062e2271-1fd4-4915-aa5e-19b70f0e7ea3"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7c6a5be0-e445-4854-82be-8b6d42158535"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="2c5f5974-c18c-45ac-a5d1-5f412bafa1a6"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="2c5f5974-c18c-45ac-a5d1-5f412bafa1a6"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a1cd98dc-7ccc-4f29-8899-09687f2d2050"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="048b158f-37dd-44df-8669-97a4ce8c215e"
+                  LastKnownName="跳转到微信登录页"
+                  LastKnownLocation="ModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="048b158f-37dd-44df-8669-97a4ce8c215e"
+            name="跳转到微信登录页"
+            isLeaf="false" />
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

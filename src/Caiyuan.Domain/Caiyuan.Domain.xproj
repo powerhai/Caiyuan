@@ -7,7 +7,7 @@
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>258c2ae5-b80a-4874-a7ad-19f4cbcffc5d</ProjectGuid>
+    <ProjectGuid>ff2c6a87-f54b-4185-8122-755cc47449b4</ProjectGuid>
     <RootNamespace>Caiyuan.Domain</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>

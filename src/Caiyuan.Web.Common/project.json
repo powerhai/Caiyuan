@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "NETStandard.Library": "1.6.0",
+    "Caiyuan.Common": "1.0.0-*",
+    "Microsoft.AspNetCore.Html.Abstractions": "1.0.0",
+    "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0",
+    "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.0",
+    "Microsoft.AspNetCore.Razor.Runtime": "1.0.0",
+    "System.ComponentModel.Annotations": "4.1.0",
+    "Microsoft.AspNetCore.Authentication.Cookies": "1.1.0-alpha1-21619"
+  },
+  "frameworks": {
+    "netstandard1.6": { "imports": "netcore50" }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "userSecretsId": "aspnet-Caiyuan.Web-c875a149-f797-472f-95ff-f307692cea5e",
+
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "version": "1.0.0",
+      "type": "platform"
+    },
+    "Caiyuan.Common": "1.0.0-*",
+    "Caiyuan.DB.Access": "1.0.0-*",
+    "Caiyuan.DB.Models": "1.0.0-*",
+    "Caiyuan.Domain": "1.0.0-*",
+    "Caiyuan.ViewModels": "1.0.0-*",
+    "Caiyuan.Web.Common": "1.0.0-*",
+    "Caiyuan.Web.Services": "1.0.0-*",
+    "Caiyuan.Web.Controllers": "1.0.0-*",
+    "Caiyuan.Web.Config": "1.0.0-*",
+    "Caiyuan.Web.Authentication.Wechat": "1.0.0",
+    "Microsoft.ApplicationInsights.AspNetCore": "1.0.0",
+    "Microsoft.AspNetCore.Diagnostics": "1.0.0",
+    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.0.0",
+    "Microsoft.AspNetCore.Mvc": "1.0.0",
+    "Microsoft.AspNetCore.Identity": "1.0.0",
+    "Microsoft.AspNetCore.Authentication.OAuth": "1.1.0-alpha1-21619",
+    "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.0",
+    "Microsoft.AspNetCore.Razor.Tools": {
+      "version": "1.0.0-preview2-final",
+      "type": "build"
+    },
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
+    "Microsoft.AspNetCore.StaticFiles": "1.0.0",
+    "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0",
+    "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0",
+    "Microsoft.Extensions.Logging": "1.0.0",
+    "Microsoft.Extensions.Logging.Console": "1.0.0",
+    "Microsoft.Extensions.Logging.Debug": "1.0.0",
+    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
+    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
+    "Microsoft.AspNetCore.Server.Kestrel.Https": "1.0.0",
+    "Npgsql.EntityFrameworkCore.PostgreSQL": "1.0.1",
+    "Microsoft.EntityFrameworkCore.Design": {
+      "type": "build",
+      "version": "1.0.0-preview2-final"
+    },
+    "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview2-final",
+    "Microsoft.AspNetCore.Mvc.Formatters.Xml": "1.0.0",
+    "Microsoft.AspNetCore.Session": "1.1.0-alpha1-21619",
+    "Microsoft.AspNetCore.Authentication.Cookies": "1.0.0",
+    "Microsoft.AspNetCore.Authentication.Google": "1.1.0-alpha1-21619"
+  },
+
+  "tools": {
+    "Microsoft.EntityFrameworkCore.Tools": {
+      "version": "1.0.0-preview2-final"
+
+    },
+    "Microsoft.AspNetCore.Razor.Tools": {
+      "version": "1.0.0-preview1-final",
+      "imports": "portable-net45+win8"
+    },
+    "Microsoft.AspNetCore.Server.IISIntegration.Tools": {
+      "version": "1.0.0-preview1-final",
+      "imports": "portable-net45+win8+dnxcore50"
+    },
+    "Microsoft.Extensions.SecretManager.Tools": {
+      "version": "1.0.0-preview1-final",
+      "imports": "portable-net45+win8+dnxcore50"
+    },
+    "Microsoft.VisualStudio.Web.CodeGeneration.Tools": {
+      "version": "1.0.0-preview1-final",
+      "imports": [
+        "portable-net45+win8+dnxcore50",
+        "portable-net45+win8",
+        "dnxcore50"
+      ]
+    }
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "netcore50"
+    }
+  },
+
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "preserveCompilationContext": true
+  },
+
+  "runtimeOptions": {
+    "gcServer": true
+  },
+
+  "publishOptions": {
+    "include": [
+      "wwwroot",
+      "Views",
+      "appsettings.json",
+      "web.config"
+    ]
+  },
+
+  "scripts": {
+    "prepublish": [ "npm install", "bower install", "gulp clean", "gulp min" ],
+    "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
+  }
+}

@@ -1,0 +1,45 @@
+﻿@using Caiyuan.Domain
+@using Caiyuan.ViewModels.Reservation
+@model ReservationInfoViewModel
+@{
+    ViewData["Title"] = "菜园介绍";
+}
+
+<hr/>
+@foreach(var doc in Model.Reservations)
+{
+    <div class="media highlight">
+        <div class="media-left">
+            <image src="/images/a.jpg" class="img-circle"></image>
+        </div>
+        <div class="media-body">
+
+            <h3 class="media-heading">
+                @Html.DisplayFor(modelItem => doc.DateTime)
+            </h3>
+
+            <div>
+                <span>级别：</span><span>@Html.DisplayFor(modelItem => doc.Objects)</span></div>
+
+            @{
+                switch(doc.Status)
+                {
+                    case ReservationStatus.Init:
+                        // Use the text block below to separate html elements from code
+                        <text>
+                            <div>
+                                <span>状态：</span><span  enum-color="doc.Status">@Html.LabelForEnum(doc.Status)</span></div>
+                        </text>
+                        break; // Always break each case
+                    case ReservationStatus.Deal:
+                        <text>
+                            <div>
+                                <span>状态2：</span><span  enum-color="doc.Status">@Html.LabelForEnum(doc.Status)</span></div>
+                        </text>
+                        break;
+                }
+            }
+        </div>
+        <div><a href="Reservation/EditReservationByPatient?id=@doc.ID">abc</a></div>
+    </div>
+}

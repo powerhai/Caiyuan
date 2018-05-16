@@ -5,10 +5,10 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using Caiyuan.Controllers;
-using Caiyuan.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Caiyuan.Web.Controllers;
+using Caiyuan.Web.Services;
 
 namespace Caiyuan.UnitTests
 {

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="e910477f-3e50-4138-9597-819b6e1f5903" name="Activity3" linkedPackageId="a2411b6a-d455-477c-bbc4-88411b35555f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="8c66aa32-8ba4-4499-aa85-7e146ed382ad">
+      <elementDefinition Id="be4580d6-ba32-46b9-897b-2b61f359e3e6" />
+      <body>微信浏览器过来的？</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="4d3681a9-ca87-4aa9-94c3-ad5a15998a1c" LastKnownName="Decision1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="dce51425-6d8f-4807-ad80-03e246910996">
+      <elementDefinition Id="ac069817-94bd-45be-8006-356f31c2cd6a" />
+      <body>登录了吗？</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="0f8a47cb-6a97-436e-a1d0-bda0fda1cc2a" LastKnownName="Decision2" />
+      </annotatedElements>
+    </comment>
+    <comment Id="51abb6c3-72d9-4d89-9c1f-ad83e76a0ed9">
+      <elementDefinition Id="da68dfb9-1625-4d41-8ca1-bdb931b38c64" />
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="960bf5a8-10f5-40e7-ae57-b4ceae1b563c" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="972bc036-332d-461d-a0b8-f370747909df" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="2aa8fc94-2d1e-4169-947b-bb91a7396b72">
+          <propertyInstance Id="9a7d8583-5739-445b-b8d7-3fa423aa7cd0" name="BaseName">
+            <elementDefinition Id="c51802c8-5965-4a83-93f9-1d2842fca334" />
+          </propertyInstance>
+          <elementDefinition Id="634c93cb-75e2-415e-b302-9845fc7f7987" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7ee939e2-f682-4296-975a-cba94daaffad">
+          <propertyInstance Id="72d67e4a-31a8-47dc-bf92-e2db3fd672c0" name="ClrAttributes">
+            <elementDefinition Id="6e657611-a91e-47ef-a938-1e1f299f1adb" />
+          </propertyInstance>
+          <elementDefinition Id="68c7a2b2-f0c4-4e27-a85e-09d6f04e1db0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="55d7c1a1-0c27-4813-ab9a-5d7b89432951">
+          <propertyInstance Id="5f013f14-c25a-429a-90a3-622b3c023bd0" name="Usings">
+            <elementDefinition Id="e9141504-7a1d-42e9-a7c7-980e8068c80e" />
+          </propertyInstance>
+          <elementDefinition Id="4c2b0320-a57c-41e2-896a-b305be6fff70" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="05984d25-01c3-418c-a9f4-ac09f1686702" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="b1a6a488-d5fd-46fe-8d4b-77569e27f1fb" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a37cc910-be6c-4aca-97e9-005e873d164f">
+          <propertyInstance Id="ef9f7deb-b105-4acd-b431-a348ca6dea80" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="721ec807-2bdc-43bc-8d2e-cf5a582b21ed" />
+          </propertyInstance>
+          <elementDefinition Id="adae40fb-e1dd-4e8a-b31c-92ad5c3db58e" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f06a5ce1-7f05-45ac-9847-9f071fa1a4d9">
+          <propertyInstance Id="dfe61c78-bee0-43ea-9855-6e041dcd25bd" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="e2c1da1a-0f40-4e7e-a8e6-2d8d7815820a" />
+          </propertyInstance>
+          <elementDefinition Id="ff313e52-5e47-4e7e-8d31-d3bdf4b79dd8" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1af655ca-2bb6-4894-9129-b8d655c1296a">
+          <propertyInstance Id="ca9a0d9d-2c56-4a29-a6d0-17837f572a1b" name="ProjectPath" value="ClassTemplate=..\Sagua.Yake.DBModels\Sagua.Yake.DBModels.csproj|EnumTemplate=..\Sagua.Yake.Domain\Sagua.Yake.Domain.csproj|InterfaceTemplate=..\ModelingProjectLib\ModelingProjectLib.csproj|StructTemplate=..\ModelingProjectLib\ModelingProjectLib.csproj">
+            <elementDefinition Id="614240b0-68db-4202-aca3-a7256ac3bbfd" />
+          </propertyInstance>
+          <elementDefinition Id="0b695498-a9be-4362-a12a-2d3304dde88a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="bfad900b-81f7-471e-9f56-0acab5a8a8cd">
+          <propertyInstance Id="ca35a058-9b6f-4ffa-81e5-ad2e0b7a455a" name="TargetDirectory" value="ClassTemplate=\{PackageStructure}|EnumTemplate={PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="63c58734-e7e6-4b30-8286-21bf71cba991" />
+          </propertyInstance>
+          <elementDefinition Id="23dab540-9580-49de-a2d9-e5a7b3a091c2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ab7915aa-6395-45d7-a278-25722d718f2e">
+          <propertyInstance Id="53c7e703-3486-4729-9a4b-676d1d13642b" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="c68c4d61-bf3f-45ad-a466-aef246e4caf9" />
+          </propertyInstance>
+          <elementDefinition Id="6c56e7dd-070a-447a-806b-7d5c826c28b3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a57eac18-c685-4204-b2a0-ac3a8641ee0b">
+          <propertyInstance Id="1a29d74f-1d0b-485a-bd17-5a41d659aa98" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="929895f0-2631-4589-89f3-5e53e2d09cee" />
+          </propertyInstance>
+          <elementDefinition Id="d5ebbc53-acd6-437f-8380-4608ad06a8e4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e6677acd-8520-43c8-81b1-119662993715">
+          <propertyInstance Id="80a99b1d-3e4a-4973-835f-277cbbc695ce" name="Parameters">
+            <elementDefinition Id="3de012a0-2cd4-4e72-9c29-8ef4806a5091" />
+          </propertyInstance>
+          <elementDefinition Id="ee0a7dd9-a723-4ce4-9e5c-573de567b811" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="903fc983-061a-45e7-8ca4-3e13d033eb39">
+      <profileInstance Id="83084d35-c46d-4c39-9272-819ad5066655" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="421a404e-769b-42df-8ed8-9150e1573519">
+      <profileInstance Id="c30fd9f3-57fd-4b64-8661-7c84d1a0392a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c26d31ea-4863-4ed9-9371-5b3ca7b301a1">
+      <profileInstance Id="d32dd2ae-8d42-4139-a44a-2d98983f9b0c" name="CSharpProfile">
+        <elementDefinition Id="74d7a904-7a7c-4274-b0ac-0144eb3f93c4" />
+      </profileInstance>
+      <elementDefinition Id="dbdc1d6d-e6d4-415d-abe5-93ca028076a0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d5689ba0-9a6a-43ef-ad8c-5d9ac910d800">
+      <profileInstance Id="72c99e51-2dec-4e3f-b235-1a3edde476ff" name="TextTemplateBindings">
+        <elementDefinition Id="a7b8c563-c5cc-47c0-bfdd-5bb4dd95bf9c" />
+      </profileInstance>
+      <elementDefinition Id="71b65627-6b89-4fa8-88f1-fc04e90e44f6" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="aeac23ae-fa58-49a5-8f06-9a7fce20f148" name="Activity3" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="46314897-7f51-4ec9-bd16-0a3cdafc0ace" />
+        <nodes>
+          <initialNode Id="beb59e7f-d938-4b05-aab9-19ddbf6b3f69" name="Initial1" isLeaf="false">
+            <elementDefinition Id="32939640-4e9f-405e-88ba-69e1a4177497" />
+            <flowNodeTargets>
+              <controlFlow Id="de27c5dd-0d77-4e62-9ef3-5601fd6e2c34" isLeaf="false">
+                <decisionNodeMoniker Id="4d3681a9-ca87-4aa9-94c3-ad5a15998a1c" LastKnownName="Decision1" />
+                <elementDefinition Id="8d7dc135-9d6a-469e-8e63-d09a80be46b0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <decisionNode Id="4d3681a9-ca87-4aa9-94c3-ad5a15998a1c" name="Decision1" isLeaf="false">
+            <elementDefinition Id="062e2271-1fd4-4915-aa5e-19b70f0e7ea3" />
+            <flowNodeTargets>
+              <controlFlow Id="0de8c9eb-3920-44c2-8865-0ebf23c17002" isLeaf="false">
+                <decisionNodeMoniker Id="0f8a47cb-6a97-436e-a1d0-bda0fda1cc2a" LastKnownName="Decision2" />
+                <elementDefinition Id="7c6a5be0-e445-4854-82be-8b6d42158535" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="0f8a47cb-6a97-436e-a1d0-bda0fda1cc2a" name="Decision2" isLeaf="false">
+            <elementDefinition Id="2c5f5974-c18c-45ac-a5d1-5f412bafa1a6" />
+            <flowNodeTargets>
+              <controlFlow Id="68d3b325-a2a3-4b37-a61b-01b9c1509c35" isLeaf="false">
+                <opaqueActionMoniker Id="9de32fdb-9ec8-4b41-829d-ec1e2dd3a68a" LastKnownName="跳转到微信登录页" />
+                <elementDefinition Id="a1cd98dc-7ccc-4f29-8899-09687f2d2050" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="9de32fdb-9ec8-4b41-829d-ec1e2dd3a68a" name="跳转到微信登录页" isLeaf="false">
+            <elementDefinition Id="048b158f-37dd-44df-8669-97a4ce8c215e" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="a2411b6a-d455-477c-bbc4-88411b35555f" name="ModelingProject">
+    <elementDefinition Id="5cb65378-23fd-4a1c-9d5a-f6bbd71f3d9d" />
+  </package>
+</activityRootModel>

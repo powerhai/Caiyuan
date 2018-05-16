@@ -1,0 +1,96 @@
+﻿@using Caiyuan.ViewModels.Clinic;
+@model CreateClinicByMasterViewModel
+
+@{
+    ViewData["Title"] = "创建菜园";
+}
+
+<h2>@ViewData["Title"]</h2>
+<div class="row">
+    <div class="col-md-8">
+        <section>
+            <form asp-controller="Clinic" asp-action="CreateClinicByMaster"   method="post" class="form-horizontal">
+                <h4>创建一个属于自己的菜园.</h4>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+               
+                 <div class="form-group">
+                    <label asp-for="Title" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Title" class="form-control" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Tel" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Tel" class="form-control"/>
+                        <span asp-validation-for="Tel" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Mobile" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Mobile" class="form-control"/>
+                        <span asp-validation-for="Mobile" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Address" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <textarea asp-for="Address" class="form-control"  rows="2"></textarea>
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <p><br/></p>
+                <div class="form-group">
+                    <label asp-for="Recommend" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <textarea asp-for="Recommend" class="form-control" rows="3"></textarea>
+                        <span asp-validation-for="Recommend" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn  btn-primary" >创建</button>
+                    </div>
+                </div>
+              
+            </form>
+        </section>
+    </div>
+     
+</div>
+
+ 
+<div class="row">
+    <div class='col-sm-6'>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker2'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker2').datetimepicker({
+                    locale: 'ru'
+                });
+            });
+    </script>
+</div>
+
+ 
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+
+ 
+                                                                }

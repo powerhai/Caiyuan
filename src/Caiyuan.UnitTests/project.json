@@ -4,11 +4,13 @@
   "testRunner": "mstest",
 
   "dependencies": {
-    "Caiyuan": "1.0.0-*",
     "Caiyuan.DB.Models": "1.0.0-*",
     "dotnet-test-mstest": "1.0.1-preview",
     "MSTest.TestFramework": "1.0.0-preview",
-    "Autofac.Extensions.DependencyInjection": "4.0.0-rc2-*"
+    "Autofac.Extensions.DependencyInjection": "4.0.0-rc2-*",
+    "Caiyuan.Web": "1.0.0-*",
+    "Caiyuan.ViewModels": "1.0.0-*",
+    "Caiyuan.Domain": "1.0.0-*"
   },
 
   "frameworks": {

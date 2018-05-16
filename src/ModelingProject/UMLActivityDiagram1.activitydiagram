@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="50150d6c-ed2d-4e25-b553-bd7f3e486b12" name="Activity1" linkedPackageId="465d52c5-0d51-46b4-be5e-21d27d9ef6d9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="50150d6c-ed2d-4e25-b553-bd7f3e486b12" name="关注公众号过程" linkedPackageId="465d52c5-0d51-46b4-be5e-21d27d9ef6d9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="95b668cd-1030-43b9-b256-ebda1de67027">
       <elementDefinition Id="5121f238-ff7a-45db-9aa7-00ee9b66f243" />
@@ -88,23 +88,9 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="874e2c36-de90-49b7-8d60-7a7bdfd483c4">
-      <profileInstance Id="1261fb10-c4cf-4ec0-904b-f77bd1fbb559" name="CSharpProfile">
-        <elementDefinition Id="74d7a904-7a7c-4274-b0ac-0144eb3f93c4" />
-      </profileInstance>
-      <elementDefinition Id="dbdc1d6d-e6d4-415d-abe5-93ca028076a0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="e8f45ed5-535c-4827-a5ac-98f1a9da6a7a">
-      <profileInstance Id="ff996c43-9e66-46c3-9b31-9d52f248af62" name="TextTemplateBindings">
-        <elementDefinition Id="a7b8c563-c5cc-47c0-bfdd-5bb4dd95bf9c" />
-      </profileInstance>
-      <elementDefinition Id="71b65627-6b89-4fa8-88f1-fc04e90e44f6" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
-      <activity Id="2f9a0d06-7367-4a70-966d-f9be7530442c" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+      <activity Id="2f9a0d06-7367-4a70-966d-f9be7530442c" name="关注公众号过程" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
         <elementDefinition Id="bbde9420-d41b-4b36-8698-eef309fd3e44" />
         <nodes>
           <initialNode Id="4c3a7732-bbb8-4222-a6e9-3001d7454e12" name="Initial1" isLeaf="false">
@@ -134,10 +120,9 @@
                 <opaqueActionMoniker Id="a69a4083-e1e6-4272-8cba-59bd141f96b8" LastKnownName="输入手机号" />
                 <elementDefinition Id="3a97cd6c-fcde-4398-b169-43d11fb08929" />
               </controlFlow>
-              <controlFlow Id="26a16b6b-7be0-4f56-ba94-18b88a14ddfa" guard="存在OPENID" isLeaf="false">
-                <activityFinalNodeMoniker Id="c4f7e93e-c2c1-4164-857e-7f84b6da13fc" LastKnownName="ActivityFinal1" />
-                <description>存在OPENID</description>
-                <elementDefinition Id="0544a989-76a7-4c93-87dc-2e19c81e3529" />
+              <controlFlow Id="7a61b567-3aad-49e9-a730-88f5ba77d004" isLeaf="false">
+                <opaqueActionMoniker Id="eeaab87b-329f-4bd6-88fa-86464e26e30c" LastKnownName="消息：欢迎回来!" />
+                <elementDefinition Id="26487ecc-7f5e-42b3-aa98-b6d427be18b1" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
@@ -184,6 +169,15 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+          <opaqueAction Id="eeaab87b-329f-4bd6-88fa-86464e26e30c" name="消息：欢迎回来!" isLeaf="false">
+            <elementDefinition Id="de7a6525-e7b3-4b82-abd1-8c0b432d4b9d" />
+            <flowNodeTargets>
+              <controlFlow Id="7c15734b-4676-401b-8958-b21d455d5360" isLeaf="false">
+                <activityFinalNodeMoniker Id="c4f7e93e-c2c1-4164-857e-7f84b6da13fc" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="d00c1f45-0bbf-408a-b493-eeaa9970a18b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
@@ -202,6 +196,18 @@
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="874e2c36-de90-49b7-8d60-7a7bdfd483c4">
+        <profileInstance Id="1261fb10-c4cf-4ec0-904b-f77bd1fbb559" name="CSharpProfile">
+          <elementDefinition Id="74d7a904-7a7c-4274-b0ac-0144eb3f93c4" />
+        </profileInstance>
+        <elementDefinition Id="dbdc1d6d-e6d4-415d-abe5-93ca028076a0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e8f45ed5-535c-4827-a5ac-98f1a9da6a7a">
+        <profileInstance Id="ff996c43-9e66-46c3-9b31-9d52f248af62" name="TextTemplateBindings">
+          <elementDefinition Id="a7b8c563-c5cc-47c0-bfdd-5bb4dd95bf9c" />
+        </profileInstance>
+        <elementDefinition Id="71b65627-6b89-4fa8-88f1-fc04e90e44f6" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>

@@ -1,0 +1,42 @@
+﻿@using Caiyuan.ViewModels.Doctor;
+
+@model ClinicDoctorsViewModel
+
+@{
+    ViewData["Title"] = "我们的园丁们";
+}
+
+<h2>@ViewData["Title"]</h2>
+<hr/>
+@foreach(var doc in Model.Doctors)
+    {
+        <div class="media highlight">
+            <div class="media-left">
+                <image src="/images/a.jpg" class="img-circle" ></image>
+            </div>
+            <div class="media-body">
+
+                <h3 class="media-heading">
+                    @Html.DisplayFor(modelItem => doc.Name)
+                </h3>
+
+                <div Condition="@doc.IsLevelNotNull"><span>级别：</span><span>@Html.DisplayFor(modelItem => doc.Level)</span></div>
+                
+                <div  Condition="@doc.IsPositionNotNull"><span>职位：</span><span>@Html.DisplayFor(modelItem => doc.Position)</span></div>
+               
+                <div Condition="@doc.IsSchoolNotNull"><span>职位：</span><span>@Html.DisplayFor(modelItem => doc.School)</span></div>
+                
+                <div Condition="@doc.IsExperienceNotNull"><span>经验：</span><span>@Html.DisplayFor(modelItem => doc.Experience)</span></div>
+            </div>
+        </div>
+    }
+
+
+ 
+ 
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+
+ 
+}

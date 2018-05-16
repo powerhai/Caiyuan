@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="72cd3fe3-b011-463e-94b5-279702891e8e" name="Activity2" linkedPackageId="8968a2e6-73ff-41fa-a5ed-a593a03b40ec" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="cac24ae5-5630-428e-8b43-51cee6b74356">
+      <elementDefinition Id="24af7f1c-6d71-4922-81cb-7ea54a4573be" />
+      <body>http://weyake/bill/index</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="524fd43a-7303-454e-b5bd-573c0336921d" LastKnownName="点击菜单-帐单列表" />
+      </annotatedElements>
+    </comment>
+    <comment Id="00910d13-a7c6-4ecb-9bad-1ca365e670af">
+      <elementDefinition Id="fb654af2-5496-4d40-b0f1-4d7c9ea7c28f" />
+      <body>检查是否已经登录</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="033c76e0-1a82-4127-ab22-67d097e3119b" LastKnownName="Decision1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="8c7cfefa-8f33-4930-a061-c39959803b0c">
+      <elementDefinition Id="7d0c9f78-3aee-42f5-96b2-13a7e9456805" />
+      <body>http://wechat/login?redir=weyake/bill/index</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="65b364d6-2512-4299-a0d1-79941b82e69c" LastKnownName="WECHAT LOGING" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="4d092ac7-5650-4f4c-8d82-a91377041488" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="972bc036-332d-461d-a0b8-f370747909df" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1c3fe210-6234-44eb-9dd7-dd9b9db96f9b">
+          <propertyInstance Id="13fc4580-93bb-42ea-9d71-195343d0b676" name="BaseName">
+            <elementDefinition Id="c51802c8-5965-4a83-93f9-1d2842fca334" />
+          </propertyInstance>
+          <elementDefinition Id="634c93cb-75e2-415e-b302-9845fc7f7987" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="dfece5fa-3b43-4c08-abd8-6e1325158ad2">
+          <propertyInstance Id="dea54da5-3a85-4590-9cea-f5427ee2a4f6" name="ClrAttributes">
+            <elementDefinition Id="6e657611-a91e-47ef-a938-1e1f299f1adb" />
+          </propertyInstance>
+          <elementDefinition Id="68c7a2b2-f0c4-4e27-a85e-09d6f04e1db0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e8ee27e2-d4a9-4e6c-a974-41d624c5c482">
+          <propertyInstance Id="0e259e96-6b1f-46d5-a972-1ac5b1e161c1" name="Usings">
+            <elementDefinition Id="e9141504-7a1d-42e9-a7c7-980e8068c80e" />
+          </propertyInstance>
+          <elementDefinition Id="4c2b0320-a57c-41e2-896a-b305be6fff70" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="953c6795-44b4-4acf-b4b8-4172c6cd3e91" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="b1a6a488-d5fd-46fe-8d4b-77569e27f1fb" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="34ead773-6a3d-403b-9b98-b62f8ba78da7">
+          <propertyInstance Id="47cb949a-c4f7-40f6-8c4a-8cee5084a74f" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="721ec807-2bdc-43bc-8d2e-cf5a582b21ed" />
+          </propertyInstance>
+          <elementDefinition Id="adae40fb-e1dd-4e8a-b31c-92ad5c3db58e" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="588ea67f-f8b8-4846-a34d-fd2911d9fac6">
+          <propertyInstance Id="b34377ef-d343-48d3-893e-1fdfbeccd097" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="e2c1da1a-0f40-4e7e-a8e6-2d8d7815820a" />
+          </propertyInstance>
+          <elementDefinition Id="ff313e52-5e47-4e7e-8d31-d3bdf4b79dd8" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6b6ae503-8ac3-4b9d-8b2e-c4d2ea0bdfd4">
+          <propertyInstance Id="7a5708cc-0414-43e0-933d-c87ecf6826ff" name="ProjectPath" value="ClassTemplate=..\Sagua.Yake.DBModels\Sagua.Yake.DBModels.csproj|EnumTemplate=..\Sagua.Yake.Domain\Sagua.Yake.Domain.csproj|InterfaceTemplate=..\ModelingProjectLib\ModelingProjectLib.csproj|StructTemplate=..\ModelingProjectLib\ModelingProjectLib.csproj">
+            <elementDefinition Id="614240b0-68db-4202-aca3-a7256ac3bbfd" />
+          </propertyInstance>
+          <elementDefinition Id="0b695498-a9be-4362-a12a-2d3304dde88a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ab7f9e1f-96df-4691-8ff6-8b014b78abf1">
+          <propertyInstance Id="db65a639-b27d-4697-88ac-4a988474fdcb" name="TargetDirectory" value="ClassTemplate=\{PackageStructure}|EnumTemplate={PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="63c58734-e7e6-4b30-8286-21bf71cba991" />
+          </propertyInstance>
+          <elementDefinition Id="23dab540-9580-49de-a2d9-e5a7b3a091c2" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c2cd4b72-ed91-43a1-b2f2-0368591e9bb7">
+          <propertyInstance Id="a3694871-fee6-423b-b102-9859ccaa3a06" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="c68c4d61-bf3f-45ad-a466-aef246e4caf9" />
+          </propertyInstance>
+          <elementDefinition Id="6c56e7dd-070a-447a-806b-7d5c826c28b3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="74660726-69d5-48f3-8357-2d12dd98ddd9">
+          <propertyInstance Id="58362a6e-5e12-4e74-8210-e2348d1347f9" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="929895f0-2631-4589-89f3-5e53e2d09cee" />
+          </propertyInstance>
+          <elementDefinition Id="d5ebbc53-acd6-437f-8380-4608ad06a8e4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6c13176f-e69f-448e-9365-438b76640758">
+          <propertyInstance Id="6cd493ed-8431-4130-96cd-5225cd065a9b" name="Parameters">
+            <elementDefinition Id="3de012a0-2cd4-4e72-9c29-8ef4806a5091" />
+          </propertyInstance>
+          <elementDefinition Id="ee0a7dd9-a723-4ce4-9e5c-573de567b811" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="6d656512-587b-4688-9bdb-3f345d154b7d">
+      <profileInstance Id="b7b87e4c-4cda-4e47-993f-a3a664adbf8c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="dd7df9cf-0f41-4fe9-968a-a1fbb669d79f">
+      <profileInstance Id="e5130561-d581-477c-941a-5c70b8deb93b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f2f6be52-5544-4c2a-b9cc-84ecaa0e0f53">
+      <profileInstance Id="e2e98a73-0acf-40c0-9740-ca18a27e0f24" name="CSharpProfile">
+        <elementDefinition Id="74d7a904-7a7c-4274-b0ac-0144eb3f93c4" />
+      </profileInstance>
+      <elementDefinition Id="dbdc1d6d-e6d4-415d-abe5-93ca028076a0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4015247f-9d97-4a72-80ec-a7d3b74eb163">
+      <profileInstance Id="74f6f664-c5bb-4f53-b872-f01c2fcf1e45" name="TextTemplateBindings">
+        <elementDefinition Id="a7b8c563-c5cc-47c0-bfdd-5bb4dd95bf9c" />
+      </profileInstance>
+      <elementDefinition Id="71b65627-6b89-4fa8-88f1-fc04e90e44f6" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="e25a8ea2-4413-468e-8bb7-2b465349d530" name="Activity2" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="12cdbae9-1a29-45a0-922f-feb7eac71294" />
+        <nodes>
+          <initialNode Id="efda7a37-1ca5-457f-bf34-18381ad6add2" name="Initial1" isLeaf="false">
+            <elementDefinition Id="2dda5c1f-9129-42eb-ab46-e02f1478fb33" />
+            <flowNodeTargets>
+              <controlFlow Id="dce32562-ace2-48b0-b624-19ea8a6712aa" isLeaf="false">
+                <opaqueActionMoniker Id="524fd43a-7303-454e-b5bd-573c0336921d" LastKnownName="点击菜单-帐单列表" />
+                <elementDefinition Id="5f7e553b-0912-4250-b7e2-5031b616e1d2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="524fd43a-7303-454e-b5bd-573c0336921d" name="点击菜单-帐单列表" isLeaf="false">
+            <elementDefinition Id="d6e5b097-fb10-4cbf-949a-5e4da7a531a4" />
+            <flowNodeTargets>
+              <controlFlow Id="dc98f773-fcd9-4d6d-a50b-3c225366670c" isLeaf="false">
+                <opaqueActionMoniker Id="bf469a1f-3daa-4f61-8763-cde8f33e6217" LastKnownName="WEYAKE BILL" />
+                <elementDefinition Id="8bba71aa-f072-4fa2-b73f-bf70fc542c4f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="033c76e0-1a82-4127-ab22-67d097e3119b" name="Decision1" isLeaf="false">
+            <elementDefinition Id="7eee8667-111d-44e0-8bde-686850b8064b" />
+            <flowNodeTargets>
+              <controlFlow Id="5161890e-12c9-4e15-a0f5-0fa3f249bb00" isLeaf="false">
+                <opaqueActionMoniker Id="65b364d6-2512-4299-a0d1-79941b82e69c" LastKnownName="WECHAT LOGING" />
+                <elementDefinition Id="3e1d4969-e956-499d-acb0-49bc11c62cac" />
+              </controlFlow>
+              <controlFlow Id="f2ee0b63-54cf-4840-b408-d8dfe62afa36" isLeaf="false">
+                <opaqueActionMoniker Id="c41390f0-156c-4f62-b9a4-0ec563cf38b0" LastKnownName="WEYAKE BILL" />
+                <elementDefinition Id="e5cbb648-d290-44ec-b85c-d34d17c3d3ab" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="a8728562-b470-4ada-aa61-391ca6bccacc" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="52b30630-a800-4fe1-9fe7-2aa419b4134e" />
+          </activityFinalNode>
+          <opaqueAction Id="65b364d6-2512-4299-a0d1-79941b82e69c" name="WECHAT LOGING" isLeaf="false">
+            <elementDefinition Id="817e2b5e-3393-4eaa-9702-cf3caca2e2ca" />
+            <flowNodeTargets>
+              <controlFlow Id="2fc7a98d-ef8e-4dd3-81ae-60a411bf9f5e" isLeaf="false">
+                <opaqueActionMoniker Id="c41390f0-156c-4f62-b9a4-0ec563cf38b0" LastKnownName="WEYAKE BILL" />
+                <elementDefinition Id="e58bbe1a-81e9-467a-a454-d6cf764fac0c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c41390f0-156c-4f62-b9a4-0ec563cf38b0" name="WEYAKE BILL" isLeaf="false">
+            <elementDefinition Id="5d532e13-5557-420e-a6b0-09e32d3e83b0" />
+            <flowNodeTargets>
+              <controlFlow Id="c0c04a0e-39a6-4d6f-803b-8990ba392ba6" isLeaf="false">
+                <activityFinalNodeMoniker Id="a8728562-b470-4ada-aa61-391ca6bccacc" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="c87adb86-2c93-464e-bbaa-5b9119bd7eab" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bf469a1f-3daa-4f61-8763-cde8f33e6217" name="WEYAKE BILL" isLeaf="false">
+            <elementDefinition Id="d7ea0045-6f75-4818-8cff-fdb3dfa93a79" />
+            <flowNodeTargets>
+              <controlFlow Id="bcd851c5-2e45-483e-b682-de7e6a127015" isLeaf="false">
+                <decisionNodeMoniker Id="033c76e0-1a82-4127-ab22-67d097e3119b" LastKnownName="Decision1" />
+                <elementDefinition Id="feae2b89-cbc7-4255-9d63-41992a894b38" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="8968a2e6-73ff-41fa-a5ed-a593a03b40ec" name="ModelingProject">
+    <elementDefinition Id="5cb65378-23fd-4a1c-9d5a-f6bbd71f3d9d" />
+  </package>
+</activityRootModel>
